@@ -1,0 +1,16 @@
+import React from 'react';
+import Navbar from "./components/Navbar.jsx";
+import "./App.css";
+import Banner from "./components/Banner.jsx";
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      {/*Image banner */}
+      <Banner />
+    </div>
+  );
+}
+
+export default App;
