@@ -17,6 +17,11 @@
     padding: 0  40rem 0 0;
 }
 
-.navbar div:hover{
+.navbar div a{
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.navbar div a:hover{
     border-bottom: #ff6060 2px solid;
 }
