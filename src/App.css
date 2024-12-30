@@ -1,8 +1,15 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+
+}
+
+:root{
+ --red:#ff6060;
+}
+
 body {
-    border: 1px solid red;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }

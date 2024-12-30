@@ -1,20 +1,26 @@
+*{
+    box-sizing: border-box;
+padding: 0;
+width:100%;
+}
 /*LOgo*/
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 10px solid green;
     font-size: 24px;
     color: #ff6060;
     font-weight: 500;
-    width: 90%;
-    margin: 0 0 0 3em;
+    width: 94%;
+    margin: 1em 0 1em 2.5em;
+    height: 68px;
 }
 
 /* Espace a droite du logo*/
-.logo{
-    border: black solid 3px;
-    padding: 0  40rem 0 0;
+.logo img{
+    height: 68px;
+    width: auto;
+    padding: 0 39em 0 0;
 }
 
 .navbar div a{
@@ -22,6 +28,7 @@
     color: #ff6060;
 }
 
+/*barre en dessous boutons*/
 .navbar div a:hover{
     border-bottom: #ff6060 2px solid;
 }

@@ -1,6 +1,33 @@
-.banner{
-    border: 5px solid black;
-   
-    background-image: url("https://s3-alpha-sig.figma.com/img/4706/e7dd/e270fc8fc902a1eb738458e7b29c1899?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dJGAIhRSEP75K6pzV1Cel1wwVIWigrqnq5PtaKKVMRdBWJOvWzNAkKMmnJ9sgFbPWktrOXLVBdd4Cqt7pSfBEKHugBs2xQuo3ZhGMmIjTeZsDdF2KzGzXnC13zZYYGRD6Spoya5T-wBvTQRLvUtJ5~hgSqa2jTT5nVnN5Yv0kjTVlobw6zSRMFfmI-m1NmB9qkz07iFSSpQcHJaebYBH5XXiU~OF2MAdbO85R6FTBjYpRBcHAZweSeEwpQ1pYo9XuRVIf7T~L-K6pL8ULnaJ2r3ulXpUxTpTO2nML0AnmwsqFK8CUcwCR7XSa7A4lOCOuGlyQxYleIPMm-8tgunNag__");
-    
-    } 
+.banner {
+  background-image: url("../../public/IMG.jpg");
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  border-radius: 25px;
+  background-size: 100%;
+  width: 93%;
+  height: 223px;
+  margin: 0 0 0 3.5em;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 0 0 0 -22.8em;
+    line-height: 68px;
+}
+
+.filtreBanner {
+  background-color: black;
+  height: 223px;
+  opacity: 0.5;
+  border-radius:25px ;
+
+}
