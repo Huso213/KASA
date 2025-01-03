@@ -9,26 +9,45 @@ width:100%;
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
-    color: #ff6060;
+    color: var(--red) ;
     font-weight: 500;
-    width: 94%;
-    margin: 1em 0 1em 2.5em;
+    width: 93%;
+    margin: 1em 1em 10px 2.5em;
     height: 68px;
 }
 
 /* Espace a droite du logo*/
 .logo img{
     height: 68px;
-    width: auto;
+    width: min-content;
     padding: 0 39em 0 0;
 }
 
 .navbar div a{
     text-decoration: none;
-    color: #ff6060;
+    color: var(--red);
 }
 
 /*barre en dessous boutons*/
 .navbar div a:hover{
-    border-bottom: #ff6060 2px solid;
+    border-bottom:  var(--red) 2px solid;
 }
+
+/*pour media queries*/
+@media screen (min-width: 768px){
+    .navbar { 
+        width:99%;
+        margin:1em 0 0 10px;
+        border: 1px solid blue
+    }
+    .logo img{
+    
+        padding: 0;
+    }
+    .navbar div a{
+        border: solid 1px black;
+display: flex;  
+justify-content: flex-end; 
+margin-left: -1em; }
+  
+  }

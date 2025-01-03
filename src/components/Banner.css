@@ -8,7 +8,8 @@
   background-size: 100%;
   width: 93%;
   height: 223px;
-  margin: 0 0 0 3.5em;
+  margin: 2em 0 0 3.5em;
+  border: solid red 3px;
 }
 
 .banner h1 {
@@ -16,12 +17,13 @@
     font-size: 48px;
     font-weight: 500;
     display: flex;
-    position: relative;
+    position: absolute;
     align-items: center;
+    margin: 0 0 0 10em;
     justify-content: center;
     width: max-content;
-    margin: 0 0 0 -22.8em;
     line-height: 68px;
+    border: solid 1px purple;
 }
 
 .filtreBanner {
@@ -29,5 +31,19 @@
   height: 223px;
   opacity: 0.5;
   border-radius:25px ;
+  border: 5px green solid;
+  display: flex;
+  position: absolute;
 
+}
+/*pour media queries*/
+@media screen (min-width: 768px){
+.banner{
+margin: 1em 0 0 10px;
+}
+
+.banner h1{
+font-size: 33px;
+
+}
 }
