@@ -1,53 +1,55 @@
-*{
-    box-sizing: border-box;
-padding: 0;
-width:100%;
-}
 /*LOgo*/
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    color: var(--red) ;
-    font-weight: 500;
-    width: 93%;
-    margin: 1em 1em 10px 2.5em;
-    height: 68px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  color: var(--red);
+  font-weight: 500;
+  height: 68px;
+  margin-top: 3em;
+  width: 100%;
 }
-
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
 /* Espace a droite du logo*/
-.logo img{
-    height: 68px;
-    width: min-content;
-    padding: 0 39em 0 0;
+.logo img {
+  height: 68px;
+  margin: 0 0 0 4em;
+  width: 210px;
+  height: 68px;
 }
 
-.navbar div a{
-    text-decoration: none;
-    color: var(--red);
+.navbar div a {
+  text-decoration: none;
+  color: var(--red);
+  width: 30%;
+  margin-right: 3em;
+  font-size: 24px;
 }
 
 /*barre en dessous boutons*/
-.navbar div a:hover{
-    border-bottom:  var(--red) 2px solid;
+.navbar div a:hover {
+  border-bottom: var(--red) 2px solid;
 }
 
 /*pour media queries*/
-@media screen (min-width: 768px){
-    .navbar { 
-        width:99%;
-        margin:1em 0 0 10px;
-        border: 1px solid blue
-    }
-    .logo img{
-    
-        padding: 0;
-    }
-    .navbar div a{
-        border: solid 1px black;
-display: flex;  
-justify-content: flex-end; 
-margin-left: -1em; }
-  
+@media screen (min-width: 768px) {
+  .navbar {
+    width: 99%;
+    margin: 1em 0 0 10px;
+    border: 1px solid blue;
   }
+  .logo img {
+    padding: 0;
+  }
+  .navbar div a {
+    border: solid 1px black;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -1em;
+  }
+}
