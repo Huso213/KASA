@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("../../public/IMG.jpg");
+  background-image: url("/IMG.jpg");
   background-size: cover;
   border-radius: 25px;
   display: flex;

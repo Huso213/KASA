@@ -23,16 +23,17 @@
   height: 68px;
 }
 
-.navbar div a {
+.nav-links a{
   text-decoration: none;
   color: var(--red);
   width: 30%;
   margin-right: 3em;
   font-size: 24px;
+  
 }
 
 /*barre en dessous boutons*/
-.navbar div a:hover {
+.nav-links a:hover {
   border-bottom: var(--red) 2px solid;
 }
 
