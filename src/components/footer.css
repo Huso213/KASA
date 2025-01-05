@@ -9,15 +9,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  & h3 {
-    font-weight: 500;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-  }
+}
+.footer h3 {
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .logofooter {
   width: 125px;
   height: 40px;
-} /*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */
