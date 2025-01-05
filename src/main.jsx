@@ -9,19 +9,22 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <h1>404 not found</h1>,//message d'erreur 404 si la page n'existe pas
   },
-  {
+
+  {/*Url page appartement  */ },
+ {
     path: "/appart",
     element: <div>appartement</div>
   },
+
+  {/*Url page a propos  */ },
   {
     path: "/about",
     element: <div>A propos</div>
   },
-  {
-    path: "/error",
-    element: <div>404</div>
-  },
+
+  
 ]);
 
 //charge le composant app dans parent react stricte mode

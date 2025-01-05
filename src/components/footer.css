@@ -1,26 +1,23 @@
-.footer{
-background-color:#000000 ;
-color: white;
-padding: 20px;
-min-height: 200px;
-width: 100%;
-margin-top: 15em;
-display: flex;
-flex-direction: column;
-justify-content: center;
- align-items: center;
-}
-
-
-.logofooter{
-width: 125px;
-height: 40px;
-
-}
-
-.footer h3{
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  min-height: 200px;
+  width: 100%;
+  margin-top: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h3 {
     font-weight: 500;
     font-size: 24px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
+  }
 }
+
+.logofooter {
+  width: 125px;
+  height: 40px;
+} /*# sourceMappingURL=footer.css.map */

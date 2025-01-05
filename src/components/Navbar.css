@@ -34,7 +34,17 @@
 
 /*barre en dessous boutons*/
 .nav-links a:hover {
-  border-bottom: var(--red) 2px solid;
+  border-bottom: var(--red) 3px solid;
+}
+
+/*indiquer la page actuel avec la barre */
+.nav-links a.active{
+  text-decoration: underline;
+
+
+} 
+.nav-links a.active:hover{
+  text-decoration: none;
 }
 
 /*pour media queries*/

@@ -1,5 +1,5 @@
 import React from "react";
-import "./AppartementCase.css";
+import "./AppartementCase.scss";
 import Appartement from "./Appartement.jsx";
 function AppartementCase() {
   return (

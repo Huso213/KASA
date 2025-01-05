@@ -9,14 +9,15 @@
   width: 93%;
   height: 223px;
   margin-bottom: 3em;
-}
-.banner h1 {
-  color: #ffffff;
-  font-size: 48px;
-  font-weight: 500;
-  display: flex;
-  position: absolute;
-  height: 68px;
+
+  & h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    display: flex;
+    position: absolute;
+    height: 68px;
+  }
 }
 
 .filtreBanner {
@@ -26,4 +27,4 @@
   border-radius: 25px;
   border: 1px red solid;
   width: 100%;
-}/*# sourceMappingURL=Banner.css.map */
+}
