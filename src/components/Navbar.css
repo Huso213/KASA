@@ -10,11 +10,13 @@
   margin-top: 3em;
   width: 100%;
 }
+
 .logo {
   display: flex;
   justify-content: space-between;
   width: 70%;
 }
+
 /* Espace a droite du logo*/
 .logo img {
   height: 68px;
@@ -40,6 +42,7 @@
 .nav-links a.active {
   text-decoration: underline;
 }
+
 .nav-links a.active:hover {
   text-decoration: none;
 }
@@ -57,39 +60,17 @@
     border: solid 3px;
     width: auto;
   }
-
   .nav-links {
     border: solid 3px green;
-    width:35%;
+    width: 35%;
   }
-  .nav-links a{
+  .nav-links a {
     width: 50%;
     margin: 0 10px 0px 0;
-  
-
-
   }
 }
-
 @media screen and (max-width: 768px) {
-.navbar{
-  width: auto;
-  zoom:90%;
-  
-}
-
-.logo{
-  width: auto;
-}
-.logo img{
-  width: 90%;
-}
-.nav-links {
-  border: solid 3px green;
-  width:50%;
-  margin: auto;
-}
-
-
-}
-
+  .nav-links a {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,75 @@
+/*LOgo*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: var(--red);
+    font-weight: 500;
+    height: 68px;
+    margin-top: 3em;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+/* Espace a droite du logo*/
+.logo img {
+    height: 68px;
+    margin: 0 0 0 4em;
+    width: 210px;
+    height: 68px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--red);
+    width: 30%;
+    margin-right: 3em;
+    font-size: 24px;
+}
+
+/*barre en dessous boutons*/
+.nav-links a:hover {
+    border-bottom: var(--red) 3px solid;
+}
+
+/*indiquer la page actuel avec la barre */
+.nav-links a.active {
+    text-decoration: underline;
+}
+.nav-links a.active:hover {
+    text-decoration: none;
+}
+
+/*pour media queries*/
+@media screen and (max-width: 1168px) {
+    .navbar {
+        width: 98%;
+        margin: 10px 0 0 10px;
+        border: 1px solid blue;
+    }
+    .logo img {
+        display: flex;
+        margin: 0 0 0 1em;
+        border: solid 3px;
+        width: auto;
+    }
+
+    .nav-links {
+        border: solid 3px green;
+        width: 35%;
+    }
+    .nav-links a {
+        width: 50%;
+        margin: 0 10px 0px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links a{
+        font-size: 20px;
+    }
+}
