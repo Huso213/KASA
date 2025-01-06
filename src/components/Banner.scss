@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("/IMG.jpg");
+  background-image: url("/public/IMG.jpg");
   background-size: cover;
   border-radius: 25px;
   display: flex;
@@ -9,9 +9,11 @@
   width: 93%;
   height: 223px;
   margin-bottom: 3em;
+  margin-right: auto;
+
 
   & h1 {
-    color: #ffffff;
+    color: var(--blanc);
     font-size: 48px;
     font-weight: 500;
     display: flex;
@@ -25,6 +27,23 @@
   height: 223px;
   opacity: 0.5;
   border-radius: 25px;
-  border: 1px red solid;
   width: 100%;
 }
+
+
+
+@media screen and (max-width: 780px) {
+.banner h1{
+  font-size: 30px;
+
+}
+
+}
+
+@media screen and (max-width: 580px) {
+  .banner h1{
+    font-size: 22px;
+  
+  }
+  
+  }

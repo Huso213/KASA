@@ -2,7 +2,7 @@
   background-color: var(--gris);
   margin: 20em 50px 0 50px;
   border: solid 5px purple;
-  padding: 50px 2em 1em 2em;
+  padding: 50px 2em 0em 2em;
   width: 95%;
   border-radius: 25px;
 }
@@ -16,29 +16,7 @@
   width: 100%;
 }
 
-/*pour media queries*/
-@media all and (max-width: 1275px) {
-  .AppartementCase{
-    display: flex;
-    flex-direction: row;
-    height:max-content;
-    zoom: 99%;
-  }
-.AppartementCart{
-  width: auto;
-  height: min-content;
-  display: flex;
-  flex-direction: row;
 
-  flex-wrap: wrap;
-  border: solid 10px red;
-}
-}
-@media all and (max-width: 998px) {
-  .AppartementCart {
-    flex-direction: column;
-    align-items: center;
+
    
-}
 
-}
