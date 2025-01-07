@@ -1,7 +1,6 @@
 .AppartementCase {
   background-color: var(--gris);
   margin: 20em 50px 0 50px;
-  border: solid 5px purple;
   padding: 50px 2em 0em 2em;
   width: 95%;
   border-radius: 25px;
@@ -16,44 +15,40 @@
   width: 100%;
 }
 
-
 @media screen and (max-width: 1255px) {
-  .AppartementCase{
-    width:100%;
-    border: 3px solid grey;
-  }
-  .AppartementCart a{
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    margin-bottom: 20px;
-    border: greenyellow 2px solid;
-    width: 30%;
-    
-  }
-  
-
-  
-  }
-
-  /*-*-*-*-*-*-MOBILE*-*-*-*-*-*-*-*-*-*/
-@media screen and (max-width: 768px) {
-
-   .AppartementCase{
-    width:100%;
-    border: 3px solid red;
-  }
-  .AppartementCart a{
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    margin-bottom: 20px;
-    border: greenyellow 2px solid;
+  .AppartementCase {
     width: 100%;
-    height: 250px;
-    
   }
-
+  .AppartementCart a {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+    width: 30%;
+  }
 }
-   
 
+/*-*-*-*-*-*-MOBILE*-*-*-*-*-*-*-*-*-*/
+@media screen and (max-width: 768px) {
+  .AppartementCase {
+    width: 99%;
+    margin: 12em 0px 0 0px;
+    padding: 0 10px 0 10px;
+    background-color: inherit;
+  }
+  .AppartementCart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 0 0 0;
+  }
+  .AppartementCart a {
+    flex-direction: column;
+    align-items: center;
+    width: 102%;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 0;
+    height: 250px;
+  }
+}

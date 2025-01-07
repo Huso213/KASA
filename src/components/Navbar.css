@@ -31,10 +31,9 @@
   width: 30%;
   margin-right: 3em;
   font-size: 24px;
+  /*barre en dessous boutons*/
 }
-
-/*barre en dessous boutons*/
-.nav-links a:hover {
+.nav-links a :hover {
   border-bottom: var(--red) 3px solid;
 }
 
@@ -48,29 +47,74 @@
 }
 
 /*pour media queries*/
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1068px) {
   .navbar {
     width: 98%;
     margin: 10px 0 0 10px;
-    border: 1px solid blue;
   }
   .logo img {
     display: flex;
     margin: 0 0 0 1em;
-    border: solid 3px;
     width: auto;
   }
   .nav-links {
-    border: solid 3px green;
-    width: 35%;
+    width: 30%;
+    margin-right: 2em;
+    display: flex;
+    justify-content: space-between;
   }
   .nav-links a {
-    width: 50%;
+    width: auto;
+    font-size: 90%;
     margin: 0 10px 0px 0;
   }
 }
+/*TABLETTE */
 @media screen and (max-width: 768px) {
+  .navbar {
+    width: 98%;
+  }
+  .logo {
+    width: auto;
+  }
+  .logo img {
+    width: auto;
+  }
+  .nav-links {
+    width: auto;
+    margin-right: 1em;
+  }
+}
+/*MOBILE */
+@media screen and (max-width: 568px) {
+  .logo img {
+    width: auto;
+    margin: 0 0 0 15px;
+  }
+  .nav-links {
+    width: 35%;
+    margin: 0 30px 0 0;
+    text-transform: uppercase;
+  }
   .nav-links a {
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: right;
+    margin: 0;
+  }
+  .nav-links a.active {
+    border-bottom: 3px solid;
+    text-decoration: none;
+  }
+  .nav-links a.active:hover {
+    border-bottom: var(--red) 3px solid;
+  }
+}
+@media screen and (max-width: 357px) {
+  .nav-links a {
+    font-size: 10px;
+    text-align: right;
+    width: 50%;
+    margin: 0;
   }
 }/*# sourceMappingURL=Navbar.css.map */

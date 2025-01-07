@@ -29,12 +29,26 @@
 }
 
 @media screen and (max-width: 780px) {
+  .banner {
+    zoom: 70%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
   .banner h1 {
-    font-size: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 580px) {
+  .banner {
+    justify-content: flex-start;
+  }
   .banner h1 {
-    font-size: 22px;
+    margin: -50px 0 0 20px;
+    font-size: 45px;
+    font-weight: 600;
+    padding: 0 10px 0 10px;
   }
 }/*# sourceMappingURL=Banner.css.map */
