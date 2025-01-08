@@ -87,18 +87,13 @@
 }
 /*MOBILE */
 @media screen and (max-width: 568px) {
-  .navbar {
-    width: 93%;
-  }
   .logo img {
-    width: 80%;
+    width: auto;
     margin: 0 0 0 15px;
   }
   .nav-links {
     width: 35%;
-    margin: 0 21px 0 0;
-    align-content: center;
-    display: contents;
+    margin: 0 30px 0 0;
     text-transform: uppercase;
   }
   .nav-links a {
