@@ -1,5 +1,4 @@
 .about {
-  border: solid 5px red;
   display: flex;
   flex-direction: column;
 align-content: center;
@@ -8,16 +7,23 @@ align-items: center;
 }
 
 .about nav.navbar{
-border: solid 5px purple;
   margin-bottom: 20px;
 margin-top: 10px;
 }
 
 .about div.banner{
-  border: solid 5px blue;
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0;
-  margin: 0;
+  padding: 0 0 0 0;
+  margin: 0px 0 0 0;
+  width: 98%;
+  background-image: url("../../public/imgabout.jpg") ;
+  background-size:cover;
+  height: 223px;
+}
+
+.about div.footer{
+  border: 3px solid red;
+  display: flex;
 }
