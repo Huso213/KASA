@@ -83,6 +83,7 @@
     .nav-links {
         width: auto;
         margin-right: 1em;
+        text-transform: uppercase;
     }
 }
 
@@ -118,25 +119,26 @@
 /*MOBILE */
 @media screen and (max-width: 508px) {
     .navbar {
-        width: 95%;
+        width: 99%;
         margin: 30px 0 0 0;
     }
 
     .nav-links {
-        width: 80%;
+        width: 50%;
         margin: 0 0 0 30px;
         padding: 0;
         justify-content: space-around;
 
         display: flex;
         & a {
-            font-size: 12px;
-            margin: 0 0 0 35px;
-        }
+            font-size: 19px;
+            margin: 0 0 0 3px;
+            font-weight: 400;
+        }    
+    }
+    .logo  img{
+        width: 90%;
+        margin: 0 0 0 20px;
 
-        .logo {
-            width: 50%;
-            margin: 0 0 0 15px;
-        }
     }
 }
