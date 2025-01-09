@@ -17,4 +17,10 @@
   position: relative;
   padding: 0;
   margin: 0;
+  background-image: url("../../public/imgabout.jpg");
+}
+.about div.bannerimg {
+  zoom: 100%;
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=About.css.map */

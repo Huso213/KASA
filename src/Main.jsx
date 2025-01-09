@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx"; //importe composant app
-
+import{ErrorPage} from "./pages/ErrorPage.jsx"; //message d'erreur 404 si la page n'existe pas
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About.jsx";
 import Appartement from "./pages/Appartementpage.jsx";
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <h1>404 not found</h1>,//message d'erreur 404 si la page n'existe pas
+    errorElement: <ErrorPage />,//message d'erreur 404 si la page n'existe pas
   },
 
   {/*Url page appartement  */ },
