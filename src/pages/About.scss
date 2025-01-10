@@ -1,27 +1,51 @@
 .about {
   display: flex;
   flex-direction: column;
-align-content: center;
-justify-content: center;
-align-items: center;
-}
-
-.about nav.navbar{
-  margin-bottom: 20px;
-margin-top: 10px;
-}
-
-.about div.banner{
-  display: flex;
+  align-content: center;
+  justify-content: center;
   align-items: center;
+}
+
+.about nav.navbar {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.about .banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
   position: relative;
   padding: 0;
   margin: 0;
-  background-image: url("../../public/imgabout.jpg") ;
+  background-image: url("../public/imgabout.jpg");
+  background-size: cover;
+  background-position: center;
 
-  &img{
+  & .filtreBanner {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+  }
+
+  & h1 {
+    visibility: hidden;
+  }
+  &img {
     zoom: 100%;
     width: 100%;
     height: auto;
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about nav.navbar {
+    width: 95%;
+  }
+  .about .banner {
+    padding: 0;
+    margin: 0;
+    height: 250px;
   }
 }

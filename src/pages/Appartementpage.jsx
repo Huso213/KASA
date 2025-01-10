@@ -7,7 +7,7 @@ function Appartement() {
   return (
     <>
     <Navbar />
-      
+      <Banner />
       <Footer />
     </>
   );

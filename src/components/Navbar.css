@@ -7,7 +7,7 @@
   color: var(--red);
   font-weight: 500;
   height: 68px;
-  margin-top: 2em;
+  margin-top: 3em;
   width: 100%;
 }
 
@@ -47,10 +47,10 @@
 }
 
 /*pour media queries*/
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1068px) {
   .navbar {
     width: 98%;
-    margin: 1em 0 0 10px;
+    margin: 10px 0 0 10px;
   }
   .logo img {
     display: flex;
@@ -83,7 +83,6 @@
   .nav-links {
     width: auto;
     margin-right: 1em;
-    text-transform: uppercase;
   }
 }
 /*MOBILE */
@@ -96,12 +95,14 @@
     width: 35%;
     margin: 0 30px 0 0;
     text-transform: uppercase;
+
   }
   .nav-links a {
     font-size: 17px;
     font-weight: 500;
     text-align: right;
     margin: 0;
+
   }
   .nav-links a.active {
     border-bottom: 3px solid;
@@ -111,26 +112,11 @@
     border-bottom: var(--red) 3px solid;
   }
 }
-/*MOBILE */
-@media screen and (max-width: 508px) {
-  .navbar {
-    width: 99%;
-    margin: 30px 0 0 0;
-  }
-  .nav-links {
-    width: 50%;
-    margin: 0 0 0 30px;
-    padding: 0;
-    justify-content: space-around;
-    display: flex;
-  }
+@media screen and (max-width: 357px) {
   .nav-links a {
-    font-size: 19px;
-    margin: 0 0 0 3px;
-    font-weight: 400;
-  }
-  .logo img {
-    width: 90%;
-    margin: 0 0 0 20px;
+    font-size: 10px;
+    text-align: right;
+    width: 50%;
+    margin: 0;
   }
 }/*# sourceMappingURL=Navbar.css.map */
