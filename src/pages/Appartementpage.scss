@@ -4,8 +4,8 @@
 .pageappart {
     color: var(--red);
     
-}
-.imgappart {
+
+& .imgappart {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,8 +26,9 @@
         font-size: 36px;
     }
 
-    &h2 {
-        font-size: 18px;
+    & h2 {
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 .textapparttitresous {
@@ -49,4 +50,35 @@
         background-color: var(--red);
 
     }
+}
+.textappartdescription{
+    width: 90%;
+    border: solid 2px red;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 30px;
+    & span.fleche{
+        font-size: 40px;
+        color: var(--blanc);
+    }
+}
+.textappartdesc{
+    border: solid green 2px;
+    background-color: var(--red);
+color: var(--blanc);
+    width: 40%;
+    height: 60px;
+    margin: 0 0 0 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+& h2{
+    margin: 0 0 0 10px;
+}
+
+}
+
+
 }
