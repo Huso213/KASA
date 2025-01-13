@@ -5,8 +5,8 @@
 
 :root {
   --red: #ff6060;
-  --gris: #f6f6f6;
   --blanc: #ffffff;
+  --gris: rgba(246, 246, 246, 1);
 }
 
 body {
