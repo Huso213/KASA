@@ -1,28 +1,79 @@
 .navbar {
-    margin-bottom: 1em;
+    margin: 1em 0 1em 1em;
+    width: 97%;
+    padding: 0;
+    & .logo img {
+        margin: 0 0 0 30px;
+        padding: 0;
+    }
+    & .nav-links {
+        width: 50%;
+        margin-right: -10px;
+    }
+    .nav-links a {
+        width: 25%;
+        margin-left: 135px;
+    }
 }
 .pageappart {
     color: var(--red);
 
     & .imgappart {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-self: center;
         margin: 0;
         border: solid 3px grey;
         & img {
             object-fit: cover;
-            width: 98%;
+            width: 100%;
             height: 415px;
         }
     }
 
+    & .regroup {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        
+    }
+    & .nomappart{
+border: solid 3px gray;
+display: flex;
+width: 95%;
+justify-self: center;
+justify-content: space-between;
+    }
+
+    .sens{
+        display: flex;
+        flex-direction: row;
+    }
+.etoile{
+    display: flex;
+    flex-direction: row;
+    border: saddlebrown solid 2px;
+    height: 20px;
+    margin-top: 5em;
+justify-self: end;
+    
+}
+     .badgeutilisat{
+        border: solid red 3px;
+        height: 68px;
+        width: 68px;
+        border-radius: 34px;
+        display: flex;
+        margin-top: 10px;
+      
+    }
+
     .textapparttitre {
         border: solid 1px hotpink;
-        width: 98%;
-        margin: 0 0 0 30px;
+        width: 50%;
+        margin: 0 0 0 0px;
         & h1 {
             font-size: 36px;
         }
@@ -51,77 +102,11 @@
             background-color: var(--red);
         }
     }
-}
-
-
-    /*Description et Equipement */
-    /* Conteneur principal de la description */
-    .textappartdescription{
-width: 95%;
-display: flex;
-flex-direction: row;
-border: solid palegreen 3px;
-justify-content: center;
-align-items: center;
-justify-self: center;
-
-
+    .globebox {
+        display: flex;
+        gap: 1em;
+        width: 95%;
+        justify-self: center;
+        margin-top: 1.5em;
     }
-    /*2 conteneur */
-    .textappartdesc {
-        border: solid 2px brown; /* Bordure autour de la description */
-        background-color: var(--gris); /* Couleur de fond */
-        border-radius: 10px; /* Coins arrondis */
-        width: 45%; /* Largeur complète */
-        max-width: 800px; /* Largeur maximale */
-        margin: 20px auto; /* Centrer le composant */
-      }
-      
-      .description-header {
-        display: flex; /* Utiliser flexbox pour l'alignement */
-        justify-content: space-between; /* Espacement entre les éléments */
-        align-items: center; /* Centrer verticalement */
-        background-color: var(--red); /* Couleur de fond de l'en-tête */
-        padding: 10px; /* Espacement interne */
-        border-radius: 10px; /* Coins arrondis pour l'en-tête */
-      }
-      
-      .description-header h3 {
-        font-size: 1.5rem; /* Taille de la police */
-        font-weight: bold; /* Gras */
-        color: var(--blanc); /* Couleur du texte */
-        margin: 0; /* Supprimer la marge par défaut */
-      }
-      
-      /*Texte dans les boitiers */
-      .equipement-text,
-      .description-text{
-        font-size: 18px;
-      }
-
-      .lesboutons {
-        display: flex; /* Utiliser flexbox pour les boutons */
-      }
-      
-      .boutonferme,
-      .boutonouvert {
-        font-size: 30px;
-        color: var(--blanc);
-        background-color: inherit;
-        border: solid 2px green; /* Bordure des boutons */
-        background-color: transparent; /* Fond transparent */
-        cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
-        padding: 10px; /* Espacement interne */
-        margin-left: 5px; /* Espacement entre les boutons */
-        transition: background-color 0.3s, transform 0.3s; /* Transition douce */
-      }
-      
-      .boutonferme::after{
-        visibility: hidden;
-        visibility: collapse;
-        margin-right: 1em;
-
-      }
-
-      .boutonouvert:hover {
-      }
+}

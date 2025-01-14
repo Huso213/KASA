@@ -1,31 +1,34 @@
-import React, { useState } from 'react';
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import React from 'react';
+import "./AppartementDescripton.scss"
 
-function MyComponent() {
-  const [isButtonOpenVisible, setIsButtonOpenVisible] = useState(true);
+     
+     {/* Boite Description et Equipement vient ici avec Fontasome */}
 
-  const handleBoutonFermeClick = () => {
-    console.log("Bouton Ferme cliqué");
-    setIsButtonOpenVisible(false);
-  };
-
-  const handleBoutonOuvertClick = () => {
-    console.log("Bouton Ouvert cliqué");
-    setIsButtonOpenVisible(true);
-  };
-
+        {/*DESCRIPTION */}
+function AppartementDescription (){
   return (
-    <div className="lesboutons">
-      <button className="boutonferme" onClick={handleBoutonFermeClick}>
-        <MdKeyboardArrowDown />
-      </button>
-      {isButtonOpenVisible && (
-        <button className="boutonouvert" onClick={handleBoutonOuvertClick}>
-          <MdKeyboardArrowUp />
-        </button>
-      )}
-    </div>
-  );
-}
+        <div className="description-container">
+          <div className="description-header">
+            <span>Description</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div className="description-content">
+            <p>
+              Profitez du charme de la vie parisienne dans un magnifique
+              appartement. À 3 minutes à pied du Canal Saint Martin, vous serez
+              proche des transports, mais également de nombreux commerces.
+              L'appartement est tout équipé, et possède également un parking
+              pour ceux qui souhaitent se déplacer en voiture.
+            </p>
+          </div>
+        </div>
 
-export default MyComponent;
+/* EQUIPMENT */
+
+        /* FIN EQUIPEMENT */
+
+
+  )
+  }
+
+  export default AppartementDescription;
