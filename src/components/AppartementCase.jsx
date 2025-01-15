@@ -1,29 +1,27 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./AppartementCase.scss";
 import Appartement from "./Appartement.jsx";
 //import utilAppartements from "../logement/utilAppartements.jsx";
 
-//Je recupere les données du json
-fetch("/info.json")
-.then((res) => res.json())
-.then((res) => console.log(res))
-.catch(console.error);//pour les erreur de connexion
 function AppartementCase() {
- 
+  const [appartements, setAppartements] = useState([]);
+
+  useEffect(fetchAppartements, []);
+
+  function fetchAppartements() {
+  fetch("info.json")
+   .then((res) => res.json())
+   .then((res) => setAppartements(res))
+   .catch(console.error);
+  }
 return (
     /*Couleur de fond */
     <div className="AppartementCase">
       {/* Carte des appartements */}
-      <div className="AppartementCart">
-        <Appartement />
-        <Appartement />
-        <Appartement />
-        <div className="AppartementCart">
-        <Appartement />
-        <Appartement />
-        <Appartement />
-      </div>
-      </div>
+      {appartements.map((appartements) => (
+        // on recupere les noms et imageurl des appartements
+        <Appartement title={appartements.title} imageUrl={appartements.cover}  />
+    ))}
     </div>
   );
 }
