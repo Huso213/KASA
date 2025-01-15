@@ -20,7 +20,7 @@ return (
       {/* Carte des appartements */}
       {appartements.map((appartements) => (
         // on recupere les noms et imageurl des appartements
-        <Appartement title={appartements.title} imageUrl={appartements.cover}  />
+        <Appartement title={appartements.title} imageUrl={appartements.cover} id={appartements.id}/>
     ))}
     </div>
   );

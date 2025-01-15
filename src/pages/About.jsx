@@ -8,10 +8,10 @@ import Footer from "../components/Footer";
 function About() {
   return (
     <>
-    <div class="about">
-      <Navbar />
-      <Banner />     
-      <Footer />
+      <div className="about">
+        <Navbar />
+        <Banner />
+        <Footer />
       </div>
     </>
   );

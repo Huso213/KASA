@@ -2,7 +2,7 @@ import React from "react";
 import "./Appartement.scss";
 import { Link } from "react-router-dom";
 function Appartement(props) {
-  console.log("props dans cart appartement", props);
+  
   return (
     <Link to="appart">
       <div className="appartement">

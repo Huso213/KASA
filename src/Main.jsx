@@ -14,13 +14,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,//message d'erreur 404 si la page n'existe pas
   },
 
-  {/*Url page appartement  */ },
+  // Url page appartement
  {
     path: "/appart",
     element: <Appartement/>
   },
 
-  {/*Url page a propos  */ },
+  // Url page a propos
   {
     path: "/about",
     element: <About />

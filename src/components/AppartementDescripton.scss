@@ -26,10 +26,10 @@
         justify-content: space-between;
       }
       
-      .description-header:hover {
-        background-color:fuchsia;
+      .fas.fa-chevron-down:hover {
+        border: solid 2px black;
       }
-      
+     
       .description-content {
         padding: 20px;
         background-color:var(--gris);
