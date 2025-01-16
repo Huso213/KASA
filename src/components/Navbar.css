@@ -1,3 +1,4 @@
+
 /*LOgo*/
 .navbar {
   display: flex;
@@ -9,6 +10,7 @@
   height: 68px;
   margin-top: 3em;
   width: 100%;
+
 }
 
 .logo {

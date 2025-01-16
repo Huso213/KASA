@@ -9,6 +9,8 @@
 .about nav.navbar {
   margin-bottom: 20px;
   margin-top: 10px;
+  margin-right: 10px;
+
 }
 
 .about .banner {
@@ -21,6 +23,8 @@
   background-image: url("/imgabout.jpg");
   background-size: cover;
   background-position: center;
+  width: 93%;
+  height: 223px;
 
   & .filtreBanner {
     opacity: 0.3;

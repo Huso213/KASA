@@ -9,6 +9,7 @@
     height: 68px;
     margin-top: 2em;
     width: 100%;
+
 }
 .logo {
     display: flex;
@@ -18,16 +19,19 @@
 /* Espace a droite du logo*/
 .logo img {
     height: 68px;
-    margin: 0 0 0 4em;
+    margin: 0 0 0 2.5em;
     width: 210px;
     height: 68px;
 }
+.nav-links{
+    width: 18%;
 
+}
 .nav-links a {
     text-decoration: none;
     color: var(--red);
     width: 30%;
-    margin-right: 3em;
+    margin-right: 1em;
     font-size: 24px;
 
     /*barre en dessous boutons*/
