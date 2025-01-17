@@ -1,33 +1,60 @@
-/*Description et Equipement */
-/* Conteneur principal de la description */
-.description-container {
+@charset "UTF-8";
+.box-appart {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.description-container, .equipment-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
   width: 50%;
-  background-color: #fff;
+  background-color: var(--gris);
+  overflow: hidden; /* Pour cacher le contenu qui déborde */
   border-radius: 10px;
-  overflow: hidden;
+}
+.description-container span, .equipment-container span {
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+  color: var(--blanc);
 }
 
 .description-header {
-  background-color: var(--red);
-  color: white;
-  padding: 15px 15px;
-  text-align: left;
-  font-size: 1.2rem;
-  border: none;
+  padding: 10px;
   cursor: pointer;
-  width: 100%;
-  display: flex;
-  border-radius: 10px;
-  justify-content: space-between;
+  background-color: var(--red);
 }
 
-.fas.fa-chevron-down:hover {
-  border: solid 2px black;
+.description-header:hover {
+  color: var(--blanc);
+  margin: 0;
+}
+
+.fas.fa-chevron-up {
+  background-color: var(--red);
+  font-size: 25px;
+  margin-left: 20em;
+  border: solid 1px gold;
+  color: var(--blanc);
+}
+
+.fas.fa-chevron-down {
+  background-color: var(--red);
+  font-size: 25px;
+  margin-left: 20em;
+  color: var(--blanc);
 }
 
 .description-content {
-  padding: 20px;
-  background-color: var(--gris);
-  font-size: 1rem;
-  line-height: 1.6;
+  max-height: 0; /* Commence caché */
+  overflow: hidden; /* Cache le contenu débordant */
+  transition: max-height 0.5s ease; /* Animation de glissement */
+}
+
+.description-content.open {
+  max-height: 200px; /* Ajustez cette valeur selon la taille de votre contenu */
 }/*# sourceMappingURL=AppartementDescripton.css.map */

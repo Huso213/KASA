@@ -47,8 +47,7 @@ function Appartement() {
         </div>
 
         <div className="globebox">
-          <AppartementDescription />
-          <AppartementDescription />
+                    <AppartementDescription />
         </div>
         <Footer />
       </div>
