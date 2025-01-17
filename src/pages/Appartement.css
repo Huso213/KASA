@@ -1,0 +1,11 @@
+.pageappart {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pageappart .footer {
+  margin-top: 25em;
+  margin-bottom: 0;
+}/*# sourceMappingURL=Appartement.css.map */

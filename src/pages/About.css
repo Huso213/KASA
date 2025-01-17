@@ -9,18 +9,44 @@
 .about nav.navbar {
   margin-bottom: 20px;
   margin-top: 10px;
+  margin-right: 10px;
 }
 
-.about div.banner {
+.about .banner {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: end;
   position: relative;
   padding: 0;
   margin: 0;
   background-image: url("/imgabout.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 93%;
+  height: 223px;
 }
-.about div.bannerimg {
+.about .banner .filtreBanner {
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+.about .banner h1 {
+  visibility: hidden;
+}
+.about .bannerimg {
   zoom: 100%;
   width: 100%;
   height: auto;
+  margin-bottom: 10em;
+}
+
+@media screen and (max-width: 580px) {
+  .about nav.navbar {
+    width: 95%;
+  }
+  .about .banner {
+    padding: 0;
+    margin: 0;
+    height: 250px;
+  }
 }/*# sourceMappingURL=About.css.map */

@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from "./components/Navbar.jsx";
 import "./App.scss";
-import Banner from "./components/Banner.jsx";
+import Banner from "../src//components/Misepage/Banner.jsx";
 import AppartementCase from "./components/AppartementCase.jsx";
-import Footer from "./components/Footer.jsx";
-import Main from "./components/Main.jsx";
+import Footer from "./components/Misepage/Footer.jsx";
+import Main from "./components/Misepage/Main.jsx";
 
 
 function App() {

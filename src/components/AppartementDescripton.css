@@ -1,0 +1,33 @@
+/*Description et Equipement */
+/* Conteneur principal de la description */
+.description-container {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.description-header {
+  background-color: var(--red);
+  color: white;
+  padding: 15px 15px;
+  text-align: left;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.fas.fa-chevron-down:hover {
+  border: solid 2px black;
+}
+
+.description-content {
+  padding: 20px;
+  background-color: var(--gris);
+  font-size: 1rem;
+  line-height: 1.6;
+}/*# sourceMappingURL=AppartementDescripton.css.map */

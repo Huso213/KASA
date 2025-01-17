@@ -1,9 +1,8 @@
 import React from "react";
-import "./About.scss";
-
-import Banner from "../components/Banner";
+import "../pages/About.scss";
+import Banner from "../components/Misepage/Banner";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Misepage/Footer";
 
 function About() {
   return (
