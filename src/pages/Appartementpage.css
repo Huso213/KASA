@@ -15,6 +15,7 @@
      object-fit: cover;
   width: 100%;
   height: 415px;
+  border-radius: 25px;
 }
 .pageappart .regroup {
   display: flex;
@@ -31,14 +32,12 @@
 .pageappart .sens {
   display: flex;
   flex-direction: row;
+  border: solid 2px gold;
+  margin: 0 0 0 0;
+  width: 14%;
 }
-.pageappart .etoile {
-  display: flex;
-  flex-direction: row;
-  border: goldenrod solid 2px;
-  height: 20px;
-  margin-top: 5em;
-  justify-self: end;
+.pageappart .sens h3 {
+  margin-right: 15px;
 }
 .pageappart .badgeutilisat {
   border: solid red 3px;
@@ -49,9 +48,8 @@
   margin-top: 10px;
 }
 .pageappart .textapparttitre {
-  border: solid 2px hotpink;
-  
-
+  border: solid 1px hotpink;
+  width: 50%;
   margin: 0 0 0 0px;
 }
 .pageappart .textapparttitre h1 {
@@ -61,29 +59,50 @@
   font-size: 20px;
   font-weight: 500;
 }
-.pageappart .textapparttitresous {
-  font-size: 14px;
-  border: solid 2px rgb(0, 0, 0);
+.pageappart .box-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 27%;
-  margin: 0 0 0 30px;
+  width: 95%;
+  margin: 0 0 0 38px;
+  border: solid 5px hsl(33, 75%, 51%);
 }
-.pageappart .textapparttitresous p {
+.pageappart .box-container .textapparttitresous {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 28%;
+  margin: 0 0 0 -25px;
+  border: solid 1px blue;
+}
+.pageappart .box-container p {
   color: var(--blanc);
   height: 25px;
-  width: 115px;
+  width: 30%;
+  margin-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   background-color: var(--red);
 }
+.pageappart .box-container .etoile {
+  display: flex;
+  flex-direction: row;
+  border: goldenrod solid 2px;
+  height: -moz-max-content;
+  height: max-content;
+  justify-self: end;
+  align-self: center;
+  font-size: 30px;
+  margin: 0 10px 0 0;
+}
 .pageappart .globebox {
   display: flex;
   gap: 1em;
   width: 95%;
   justify-self: center;
-  margin-top: 1.5em;
+  margin-top: 30px;
+  border: solid 3px hsl(212, 94%, 49%);
 }/*# sourceMappingURL=Appartementpage.css.map */

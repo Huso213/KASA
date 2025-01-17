@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Importer useState
 import "../pages/Appartementpage.scss";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Misepage/Footer.jsx";
+import Footer from "../components/layout/Footer.jsx";
 import AppartementDescription from "../components/AppartementDescription";
 function Appartement() {
   return (
