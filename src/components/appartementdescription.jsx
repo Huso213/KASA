@@ -1,51 +1,52 @@
 import React, { useState } from 'react';
+import data from "../../public/info.json"; // Adjust the path as necessary
 import "../components/AppartementDescripton.scss";
-const AppartementDescription = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const ApartmentDescription = () => {
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+  const [isEquipmentOpen, setIsEquipmentOpen] = useState(false);
+  
+  // Find the apartment by title
+  const apartment = data.find(item => item.title === "Magnifique appartement proche Canal Saint Martin");
 
   const toggleDescription = () => {
-    setIsOpen(prevState => !prevState);
+    setIsDescriptionOpen(!isDescriptionOpen);
+  };
+
+  const toggleEquipment = () => {
+    setIsEquipmentOpen(!isEquipmentOpen);
   };
 
   return (
     <div className="box-appart">
+      {/* Description Section */}
       <div className="description-container">
         <div className="description-header" onClick={toggleDescription}>
           <span>Description</span>
-          <i className={`fas ${isOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
+          <i className={`fas ${isDescriptionOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
         </div>
-        <div className={`description-content ${isOpen ? 'open' : ''}`}>
+        <div className={`description-content ${isDescriptionOpen ? 'open' : ''}`}>
           <p>
-            Profitez du charme de la vie parisienne dans un magnifique
-            appartement. À 3 minutes à pied du Canal Saint Martin, vous serez
-            proche des transports, mais également de nombreux commerces.
-            L'appartement est tout équipé, et possède également un parking
-            pour ceux qui souhaitent se déplacer en voiture.
+            {apartment ? apartment.description : "Description not available."}
           </p>
         </div>
       </div>
-      {/* EQUIPMENT */}
-      {/* Vous pouvez ajouter ici la section pour les équipements */}
+
+      {/* Equipment Section */}
       <div className="equipment-container">
-        <div className="equipment-header" onClick={toggleDescription}>
-          <span>Équipements</span>
-          <i className={`fas ${isOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
+        <div className="equipment-header" onClick={toggleEquipment}>
+          <h4>Équipements:</h4>
+          <i className={`fas ${isEquipmentOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
         </div>
-        <div className={`equipment-content ${isOpen ? 'open' : ''}`}>
+        <div className={`equipment-content ${isEquipmentOpen ? 'open' : ''}`}>
           <ul>
-            <li>Wi-Fi</li>
-            <li>Cuisine</li>
-            <li>Chauffage</li>
-            <li>TV</li>
-            <li>Lave-linge</li>
-            <li>Sèche-linge</li>
+            {apartment && apartment.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
           </ul>
         </div>
-      {/* FIN EQUIPEMENT */}
       </div>
-      </div>
+    </div>
   );
-}
+};
 
-
-export default AppartementDescription;
+export default ApartmentDescription;

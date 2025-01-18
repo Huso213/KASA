@@ -1,69 +1,124 @@
-.box-appart{
+/* Conteneur général */
+
+.box-appart {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
   width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: solid 1px gold;
+  gap: 3em;
+}
+
+/* Section Description */
+.description-container {
+  border: 2px solid #f55151;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 49%;
+  height: 300px; /* Hauteur standardisée */
+}
+.description-header {
   display: flex;
   justify-content: space-between;
-  gap: 1em;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-.description-container, .equipment-container {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 50%;
-  background-color: var(--gris);
-  overflow: hidden; /* Pour cacher le contenu qui déborde */
-  border-radius: 10px;
-
-
-  & span{
-    font-size: 25px;
-    font-weight: 500;
-    //background-color: var(--red);
-   width: 100%;
-    color: var(--blanc);
-  }
-}
-
-.description-header {
-  padding: 10px;
+  align-items: center;
+  background-color: var(--red);
+  color: var(--blanc);
+  padding: 10px 15px;
   cursor: pointer;
-  background-color: var(--red);
+  border-radius: 10px;
 }
-
-.description-header:hover {
-  //background-color: #eaeaea;
-  color: var(--blanc);
-  margin: 0;
+.description-header span {
+  font-weight: 500;
+  font-size: 18px;
 }
-
-// Fleche stylisation cheveron up -ouvert et down ferme
-.fas.fa-chevron-up{
-  background-color: var(--red);
-  font-size: 25px;
-  margin-left: 20em;
-  border: solid 1px gold;
-  color: var(--blanc);
-
+.description-header i {
+  transition: transform 0.3s ease;
 }
-
-.fas.fa-chevron-down{
-  background-color: var(--red);
-  font-size: 25px;
-  margin-left: 20em;
-  color: var(--blanc);
-}
-
-
 
 .description-content {
-  max-height: 0; /* Commence caché */
-  overflow: hidden; /* Cache le contenu débordant */
-  transition: max-height 0.5s ease; /* Animation de glissement */
+  padding: 15px;
+  display: none;
+}
+.description-content.open {
+  display: block;
+  background-color: var(--gris);  
+  height: 300px;
+  font-size: 18px;
+  color: var(--red);
+  
 }
 
-.description-content.open {
-  max-height: 200px; /* Ajustez cette valeur selon la taille de votre contenu */
+/* Section Équipements */
+.equipment-container {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 49%;
+  height: 300px; /* Hauteur standardisée */
+}
+.equipment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--red);
+  color: var(--blanc);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  
+}
+.equipment-header h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.equipment-header i {
+  transition: transform 0.3s ease;
+}
+
+.equipment-content {
+  padding: 15px;
+  display: none;
+  font-size: 18px;
+}
+.equipment-content.open {
+  display: block;
+  background-color: var(--gris); 
+  height: 300px; 
+  color: var(--red);
+}
+
+/* Liste des équipements */
+.equipment-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.equipment-content li {
+  margin-bottom: 10px;
+}
+
+/* Badges pour équipements (L, H, A) */
+.equipment-content .badge {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+.equipment-content .badge.L {
+  background-color: #4CAF50;
+}
+.equipment-content .badge.H {
+  background-color: black;
+}
+.equipment-content .badge.A {
+  background-color: #2196F3;
 }
