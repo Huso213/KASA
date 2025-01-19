@@ -11,18 +11,18 @@
   background-color: #fff;
   border: solid 1px gold;
   gap: 3em;
-}
 
-/* Section Description */
-.description-container {
+/* Section Conteiner */
+.Conteiner-container {
   border: 2px solid #f55151;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
   width: 49%;
+  object-fit: cover;}
   height: 300px; /* Hauteur standardisée */
 }
-.description-header {
+.Conteiner-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,19 +32,19 @@
   cursor: pointer;
   border-radius: 10px;
 }
-.description-header span {
+.Conteiner-header span {
   font-weight: 500;
   font-size: 18px;
 }
-.description-header i {
+.Conteiner-header i {
   transition: transform 0.3s ease;
 }
 
-.description-content {
+.Conteiner-content {
   padding: 15px;
   display: none;
 }
-.description-content.open {
+.Conteiner-content.open {
   display: block;
   background-color: var(--gris);  
   height: 300px;

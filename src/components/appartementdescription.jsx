@@ -34,7 +34,7 @@ const ApartmentDescription = () => {
       {/* Equipment Section */}
       <div className="equipment-container">
         <div className="equipment-header" onClick={toggleEquipment}>
-          <h4>Équipements:</h4>
+          <h4>Équipements</h4>
           <i className={`fas ${isEquipmentOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
         </div>
         <div className={`equipment-content ${isEquipmentOpen ? 'open' : ''}`}>
