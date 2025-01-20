@@ -106,13 +106,13 @@
             margin: 0 10px 0 0;
         }
     }
+    /* */
     .globebox {
         display: flex;
         gap: 1em;
         width: 95%;
-    
         justify-self: center;
         margin-top: 30px;
-        border: solid 3px hsl(212, 94%, 49%);
+        //border: solid 3px hsl(212, 94%, 49%);
     }
 }

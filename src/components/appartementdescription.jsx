@@ -19,12 +19,12 @@ const ApartmentDescription = () => {
   return (
     <div className="box-appart">
       {/* Description Section */}
-      <div className="description-container">
+      <div className="Conteiner-container">
         <div className="Conteiner-header" onClick={toggleDescription}>
           <span>Description</span>
           <i className={`fas ${isDescriptionOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
         </div>
-        <div className={`description-content ${isDescriptionOpen ? 'open' : ''}`}>
+        <div className={`Conteiner-content ${isDescriptionOpen ? 'open' : ''}`}>
           <p>
             {apartment ? apartment.description : "Description not available."}
           </p>
