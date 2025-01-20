@@ -46,8 +46,9 @@ function Appartement() {
         </div>
         <div className="box-container">
           <div className="textapparttitresous">
-            <p>{apartment.tags.join(', ')}</p>
-          </div>
+          {apartment.tags.map((tag, index) => (
+              <p key={index}>{tag}</p> // Aff <p key={index}>{tag}</p> // Afficher chaque tag dans un paragraphe séparé
+            ))}          </div>
           <div className="etoile">
             {[...Array(5)].map((_, index) => (
               <span key={index} className={index < apartment.rating ? "filled" : ""}>☆</span>
