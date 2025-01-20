@@ -3,51 +3,60 @@ import "../pages/Appartementpage.scss";
 import Navbar from "../components/Navbar";
 import Footer from "../components/layout/Footer.jsx";
 import AppartementDescription from "../components/AppartementDescription";
+import apartmentData from "../../public/info.json";
+import "../components/scss/slick-carousel.scss"; 
+import "slick-carousel/slick/slick-theme.css";
 function Appartement() {
+  const apartment = apartmentData[0]; // Changez l'index selon l'appartement que vous voulez afficher
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % apartment.pictures.length);
+  };
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + apartment.pictures.length) % apartment.pictures.length);
+  };
+    
   return (
     <>
       <div className="pageappart">
         <Navbar />
         <div className="imgappart">
+          <button onClick={prevImage} className="carousel-button">❮</button>
           <img
-            src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
-            alt=""
+            src={apartment.pictures[currentIndex]}
+            alt={`Image ${currentIndex + 1} de ${apartment.title}`}
+            className="carousel-image"
           />
+          <button onClick={nextImage} className="carousel-button">❯</button>
         </div>
 
         <div className="nomappart">
           <div className="textapparttitre">
-            <h1>Cozy loft on the Canal Saint Martin</h1>
-            <h2>Paris, Ile-de-France</h2>
+            <h1>{apartment.title}</h1>
+            <h2>{apartment.location}</h2>
           </div>
           <div className="sens">
             <h3>
-              Alexandre
+              {apartment.host.name}
               <br />
-              Dumas
             </h3>
-            {/*rond badge */}
             <div className="badgeutilisat"></div>
           </div>
         </div>
-<div className="box-container">
-        <div className="textapparttitresous">
-          <p>Cozy</p>
-          <p>Canal</p>
-          <p>Paris 10</p>
+        <div className="box-container">
+          <div className="textapparttitresous">
+            <p>{apartment.tags.join(', ')}</p>
           </div>
           <div className="etoile">
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-            <span>☆</span>
-          
-        </div>
+            {[...Array(5)].map((_, index) => (
+              <span key={index} className={index < apartment.rating ? "filled" : ""}>☆</span>
+            ))}
+          </div>
         </div>
 
         <div className="globebox">
-                    <AppartementDescription />
+          <AppartementDescription />
         </div>
         <Footer />
       </div>

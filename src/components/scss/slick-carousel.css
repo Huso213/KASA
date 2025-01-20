@@ -1,0 +1,39 @@
+.imgappart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-button {
+  background-color: inherit;
+  color: var(--blanc);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 65px;
+}
+
+.carousel-button:hover {
+  background-color: inherit;
+}
+
+.carousel-button:first-of-type {
+  left: 10px;
+}
+
+.carousel-button:last-of-type {
+  right: 10px;
+}
