@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../../public/About.json"; // Vérifiez le chemin du fichier
+import data from "../data/About.json"; // Vérifiez le chemin du fichier
 import "../components/Conteiner.scss";
 
 const Conteiner = () => {

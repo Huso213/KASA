@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import data from "../../public/info.json"; // Adjust the path as necessary
+import data from "../data/info.json"; // Adjust the path as necessary
 import "../components/AppartementDescripton.scss";
 const ApartmentDescription = () => {
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
