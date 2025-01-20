@@ -11,14 +11,13 @@
   gap: 3em;
   /* Section Conteiner */
 }
-
 .box-appart .Conteiner-container {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
   width: 49%;
-  height: fit-content;
-  /* Hauteur standardisée */
+  height: -moz-fit-content;
+  height: fit-content; /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -60,8 +59,8 @@
   border-radius: 10px;
   overflow: hidden;
   width: 49%;
-  height: fit-content;
-  /* Hauteur standardisée */
+  height: -moz-fit-content;
+  height: fit-content; /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -119,4 +118,4 @@
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
-}
+}/*# sourceMappingURL=AppartementDescripton.css.map */
