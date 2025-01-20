@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import "./AppartementCase.scss";
 import Appartement from "./Appartement.jsx";
+import data from "../../public/info.json";
+
 //import utilAppartements from "../logement/utilAppartements.jsx";
 
 function AppartementCase() {

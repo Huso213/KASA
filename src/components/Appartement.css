@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .appartement:hover {
   animation-name: scale-up-center;
   animation-duration: 1s;
@@ -18,6 +19,7 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
+
 .appartement h1 {
   color: var(--blanc);
   font-size: 18px;
@@ -32,11 +34,11 @@
   justify-self: flex-end;
   justify-content: flex-start;
 }
+
 .appartement img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: flex;
   position: absolute;
   border-radius: 10px;
@@ -53,9 +55,8 @@
   justify-self: center;
   padding-bottom: 5em;
 }
+
 .AppartementCase a {
-  width: -moz-max-content;
-  width: max-content;
   margin: 0 0 0 25px;
 }
 
@@ -68,6 +69,7 @@
     transform: scale(1);
   }
 }
+
 /*pour media queries*/
 @media screen and (max-width: 1255px) {
   .appartement {
@@ -79,6 +81,7 @@
     width: 50%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .appartement {
     height: 300px;
@@ -88,9 +91,10 @@
     width: 25%;
   }
 }
+
 @media screen and (max-width: 535px) {
   .appartement h1 {
     width: 29%;
     font-size: 20px;
   }
-}/*# sourceMappingURL=Appartement.css.map */
+}
