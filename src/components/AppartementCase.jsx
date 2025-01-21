@@ -1,31 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./AppartementCase.scss";
 import Appartement from "./Appartement.jsx";
-import data from "../data/info.json"; // Adjust the path as necessary
-
+import data from "../data/info.json";
 
 function AppartementCase() {
   const [appartements, setAppartements] = useState([]);
 
   useEffect(() => {
-    fetchAppartements();
+    // Charger les données des appartements depuis le fichier JSON
+    setAppartements(data);
   }, []);
-
-  function fetchAppartements() {
-    fetch("/src/data/info.json")
-      .then((res) => res.json())
-      .then((res) => setAppartements(res))
-      .catch(console.error);
-  }
 
   return (
     <div className="AppartementCase">
       {appartements.map((appartement) => (
         <Appartement
-          key={appartement.id}
           title={appartement.title}
           imageUrl={appartement.cover}
           id={appartement.id}
+          key={appartement.id}
         />
       ))}
     </div>

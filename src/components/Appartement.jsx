@@ -1,21 +1,21 @@
 import React from "react";
-import "./Appartement.scss";
 import PropTypes from "prop-types";
+import "./Appartement.scss";
 import { Link } from "react-router-dom";
 
-
-function Appartement(props) {
-  
+function Appartement({ id, imageUrl, title }) {
   return (
-    <Link to="appart">
+    <Link to="/appart" state={{ appartementID: id }}>
       <div className="appartement">
-      <img src={props.imageUrl} alt="photo appartement"/>
-        <h1>{props.title}</h1>
+        <img src={imageUrl} alt="photo appartement" />
+        <h1>{title}</h1>
       </div>
     </Link>
   );
 }
+
 Appartement.propTypes = {
+  id: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
