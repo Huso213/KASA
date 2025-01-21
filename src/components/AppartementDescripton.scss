@@ -48,8 +48,12 @@
   display: block;
   background-color: var(--gris);
   height: 300px;
-  font-size: 18px;
+  & p{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: inherit;
   color: var(--red);
+  }
 }
 
 /* Section Équipements */

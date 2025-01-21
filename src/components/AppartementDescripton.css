@@ -11,13 +11,14 @@
   gap: 3em;
   /* Section Conteiner */
 }
+
 .box-appart .Conteiner-container {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
   width: 49%;
-  height: -moz-fit-content;
-  height: fit-content; /* Hauteur standardisée */
+  height: fit-content;
+  /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -50,7 +51,12 @@
   display: block;
   background-color: var(--gris);
   height: 300px;
+}
+
+.Conteiner-content.open p {
   font-size: 18px;
+  font-weight: 400;
+  background-color: inherit;
   color: var(--red);
 }
 
@@ -59,8 +65,8 @@
   border-radius: 10px;
   overflow: hidden;
   width: 49%;
-  height: -moz-fit-content;
-  height: fit-content; /* Hauteur standardisée */
+  height: fit-content;
+  /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -118,4 +124,4 @@
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
-}/*# sourceMappingURL=AppartementDescripton.css.map */
+}

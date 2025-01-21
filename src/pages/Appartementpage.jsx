@@ -22,7 +22,10 @@ function Appartementpage() {
     return (
       <div className="appartement-error">
         <h2>Appartement introuvable</h2>
-        <p>Veuillez vérifier l'ID de l'appartement ou revenir à la page précédente.</p>
+        <p>
+          Veuillez vérifier l'ID de l'appartement ou revenir à la page
+          précédente.
+        </p>
       </div>
     );
   }
@@ -59,10 +62,44 @@ function Appartementpage() {
           ❯
         </button>
       </div>
-      <div className="nomappart">
-        <h1>{apartment.title}</h1>
-        <h2>{apartment.location}</h2>
+      {/*information sous image appartement */}
+      <div className="infoappart">
+        <div className="nomappart">
+          <h1>{apartment.title}</h1>
+          <h2>{apartment.location}</h2>
+        </div>
+        <div className="badge">
+  <h3>{apartment.host?.name || "Nom de l'hôte indisponible"}</h3>
+  <span>{apartment.host?.superhost ? "Superhost" : ""}</span>
+  <div className="badgeutilisat">
+    <img
+      src={apartment.host?.picture}
+      alt={`Profil de ${apartment.host?.name || "hôte"}`}
+      className="host-picture"
+    />
+  </div>
+</div>
+
       </div>
+
+      <div className="box-container">
+        <div className="textapparttitresous">
+          {apartment.tags.map((tag, index) => (
+            <p key={index}>{tag}</p> // Aff <p key={index}>{tag}</p> // Afficher chaque tag dans un paragraphe séparé
+          ))}{" "}
+        </div>
+        <div className="etoile">
+          {[...Array(5)].map((_, index) => (
+            <span
+              key={index}
+              className={index < apartment.rating ? "filled" : ""}
+            >
+              <i class="fas fa-star"></i>
+            </span>
+          ))}
+        </div>
+      </div>
+
       <div className="box-container">
         <AppartementDescription description={apartment.description} />
       </div>
