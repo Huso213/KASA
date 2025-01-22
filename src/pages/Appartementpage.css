@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.pageappart .box-container {
+  border: solid 1px black;
+}
+
 .imgappart {
   position: relative;
   display: flex;
@@ -6,7 +10,7 @@
   align-items: center;
   width: 95%;
   margin: auto;
-  border: solid 3px grey;
+  margin-top: 1.2em;
 }
 
 .imgappart img {
@@ -54,7 +58,6 @@
 }
 
 .infoappart {
-  border: solid 2px plum;
   color: var(--red);
   width: 95%;
   display: flex;
@@ -89,8 +92,7 @@
   align-self: center;
 }
 
-.box-container {
-  border: solid 2px red;
+.trois-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -98,15 +100,15 @@
   justify-self: center;
 }
 
-.box-container .textapparttitresous {
+.trois-box .textapparttitresous {
   width: 50%;
-  margin: 1em 0 0 40px;
+  margin: 1em 0 0 0px;
   display: flex;
   flex-direction: row;
   gap: 1em;
 }
 
-.box-container p {
+.trois-box p {
   background-color: var(--red);
   color: var(--blanc);
   font-size: 18px;
@@ -115,21 +117,31 @@
   padding: 5px 20px;
 }
 
-.box-container .etoile span {
-  border: solid 2px blue;
+.trois-box .etoile {
+  width: 15%;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 25px 0 0 0;
+}
+
+.trois-box span {
   display: inline-block;
   /* Permet de manipuler les propriétés de mise en forme */
   font-size: 30px;
   /* Taille de l'étoile */
 }
 
-.box-container .etoile span.filled i.fas.fa-star {
+.trois-box span i.fas.fa-star {
+  color: var(--star);
+  /* couleur pour l'étoile vide */
+}
+
+.trois-box span.filled i.fas.fa-star {
   color: var(--red);
   /* couleur pour l'étoile pleine */
   font-size: 30px;
   /* taille des étoiles pour mieux visualiser */
-}
-
-.box-container .etoile span .fa-star:before {
-  color: var(--grisetoiles);
 }

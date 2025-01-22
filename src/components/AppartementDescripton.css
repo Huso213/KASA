@@ -60,6 +60,19 @@
   color: var(--red);
 }
 
+.Conteiner-content.open li {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: inherit;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: inherit;
+  color: var(--red);
+  display: flex;
+  margin-bottom: 10px;
+}
+
 /* Section Équipements */
 .equipment-container {
   border-radius: 10px;

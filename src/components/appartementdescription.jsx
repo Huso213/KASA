@@ -1,47 +1,48 @@
 import React, { useState } from 'react';
-import data from "../data/info.json"; // Adjust the path as necessary
+import { useParams } from 'react-router-dom';
+import data from "../data/info.json"; // Ajustez le chemin si nécessaire
 import "../components/AppartementDescripton.scss";
+
 const ApartmentDescription = () => {
-  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
-  const [isEquipmentOpen, setIsEquipmentOpen] = useState(false);
-  
-  // Find the apartment by title
-  const apartment = data.find(item => item.title === "Magnifique appartement proche Canal Saint Martin");
+  const { id } = useParams(); // Récupère l'ID depuis l'URL
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false); // État pour ouvrir/fermer la description
+  const [isEquipmentOpen, setIsEquipmentOpen] = useState(false); // État pour ouvrir/fermer les équipements
 
-  const toggleDescription = () => {
-    setIsDescriptionOpen(!isDescriptionOpen);
-  };
+  // Recherche de l'appartement à afficher via l'ID
+  const apartment = data.find((item) => item.id === id);
 
-  const toggleEquipment = () => {
-    setIsEquipmentOpen(!isEquipmentOpen);
-  };
+  // Gestion des états d'ouverture/fermeture
+  const toggleDescription = () => setIsDescriptionOpen(!isDescriptionOpen);
+  const toggleEquipment = () => setIsEquipmentOpen(!isEquipmentOpen);
+
+  if (!apartment) {
+    return <p>Appartement introuvable. Vérifiez l'ID fourni.</p>;
+  }
 
   return (
     <div className="box-appart">
-      {/* Description Section */}
+      {/* Section Description */}
       <div className="Conteiner-container">
         <div className="Conteiner-header" onClick={toggleDescription}>
           <span>Description</span>
           <i className={`fas ${isDescriptionOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
         </div>
         <div className={`Conteiner-content ${isDescriptionOpen ? 'open' : ''}`}>
-          <p>
-            {apartment ? apartment.description : "Description not available."}
-          </p>
+          <p>{apartment.description || "Description non disponible."}</p>
         </div>
       </div>
 
-      {/* Equipment Section */}
-      <div className="equipment-container">
-        <div className="equipment-header" onClick={toggleEquipment}>
-          <h4>Équipements</h4>
+      {/* Section Équipements */}
+      <div className="Conteiner-container">
+        <div className="Conteiner-header" onClick={toggleEquipment}>
+          <span>Équipements</span>
           <i className={`fas ${isEquipmentOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
         </div>
-        <div className={`equipment-content ${isEquipmentOpen ? 'open' : ''}`}>
+        <div className={`Conteiner-content ${isEquipmentOpen ? 'open' : ''}`}>
           <ul>
-            {apartment && apartment.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
+            {apartment.equipments?.map((equip, index) => (
+              <li key={index}>{equip}</li>
+            )) || <li>Aucun équipement disponible.</li>}
           </ul>
         </div>
       </div>

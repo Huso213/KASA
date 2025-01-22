@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 
   // Url page appartement
  {
-    path: "/appart",
+    path: "/appart/:id",
     element: <Appartement/>
   },
 

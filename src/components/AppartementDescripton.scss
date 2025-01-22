@@ -54,6 +54,19 @@
     background-color: inherit;
   color: var(--red);
   }
+  & li{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: inherit;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: inherit;
+  color: var(--red);
+  display: flex;
+  margin-bottom: 10px;
+
+  }
 }
 
 /* Section Équipements */
@@ -115,12 +128,4 @@
   color: #fff;
   border-radius: 5px;
 }
-.equipment-content .badge.L {
- // background-color: #4caf50;
-}
-.equipment-content .badge.H {
- // background-color: black;
-}
-.equipment-content .badge.A {
- // background-color: #2196f3;
-}
+
