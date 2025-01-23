@@ -1,4 +1,4 @@
-{/* LES 20 APPARTMENT DE LA PAGE D ACCUEIL */}
+{/* Pour afficher les information un appartement sur la page Accueil */}
 import React from "react";
 import PropTypes from "prop-types";
 import "./Appartement.scss";

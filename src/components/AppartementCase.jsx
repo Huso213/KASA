@@ -1,3 +1,4 @@
+//Il affiche les 20 appartements sur la page Accueil.
 import React, { useState, useEffect } from "react";
 import "./AppartementCase.scss";
 import Appartement from "./Appartement.jsx";
