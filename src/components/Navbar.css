@@ -37,6 +37,7 @@
   font-size: 24px;
   /*barre en dessous boutons*/
 }
+
 .nav-links a :hover {
   border-bottom: var(--red) 3px solid;
 }
@@ -73,6 +74,7 @@
     margin: 0 10px 0px 0;
   }
 }
+
 /*TABLETTE */
 @media screen and (max-width: 768px) {
   .navbar {
@@ -90,6 +92,7 @@
     text-transform: uppercase;
   }
 }
+
 /*MOBILE */
 @media screen and (max-width: 568px) {
   .logo img {
@@ -115,6 +118,7 @@
     border-bottom: var(--red) 3px solid;
   }
 }
+
 /*MOBILE */
 @media screen and (max-width: 508px) {
   .navbar {
@@ -137,4 +141,4 @@
     width: 90%;
     margin: 0 0 0 20px;
   }
-}/*# sourceMappingURL=Navbar.css.map */
+}

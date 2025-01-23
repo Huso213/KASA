@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.pageappart .box-container {
-  border: solid 1px black;
-}
-
 .imgappart {
   position: relative;
   display: flex;

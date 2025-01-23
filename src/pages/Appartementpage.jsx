@@ -84,7 +84,7 @@ function Appartementpage() {
       </div>
 
       {/* Tags et équipements */}
-      <div className="box-container">
+      <div className="trois-box">
         <div className="textapparttitresous">
           {apartment.tags?.map((tag, index) => (
             <p key={index} className="tag">

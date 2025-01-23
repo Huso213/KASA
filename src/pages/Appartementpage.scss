@@ -1,10 +1,3 @@
-.pageappart {
-    & .box-container {
-    border: solid 1px black;
-    }
-
-}
-
 .imgappart {
     position: relative; // Important pour placer les boutons par-dessus l'image
     display: flex;
@@ -95,51 +88,55 @@
     }
 }
 
-.trois-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-    justify-self: center;
-    & .textapparttitresous{
-       width: 50%;
-        margin: 1em 0 0 0px;
+
+//trois box + etoiles
+    
+   .trois-box {
         display: flex;
         flex-direction: row;
-        gap :1em;
-
-    }
-    & p{
-        background-color: var(--red);
-        color: var(--blanc);
-        font-size: 18px;
-        font-weight: 500;
-        border-radius: 15px;
-        padding: 5px 20px;
-    }
-    & .etoile {
-        width: 15%;
-        padding: 0 1em;
-        display: flex;
         justify-content: space-between;
-        align-content: center;
-        align-items: center;
-        margin: 25px 0 0 0;
-        
-    }
+        width: 95%;
+        justify-self: center;
+        & .textapparttitresous{
+            width: 50%;
+            margin: 1em 0 0 0px;
+            display: flex;
+            flex-direction: row;
+            gap :1em;
+            
+        }
+        & p{
+            background-color: var(--red);
+            color: var(--blanc);
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 15px;
+            padding: 5px 20px;
+        }
+        & .etoile {
+            width: 15%;
+            padding: 0 1em;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            margin: 25px 0 0 0;
+            
+        }
         & span {
             display: inline-block;   /* Permet de manipuler les propriétés de mise en forme */
             font-size: 30px;          /* Taille de l'étoile */
-       
-          
-    & i.fas.fa-star {
-        color: var(--star); /* couleur pour l'étoile vide */
-    
+            
+            
+            & i.fas.fa-star {
+                color: var(--star); /* couleur pour l'étoile vide */
+                
+            }
+            &.filled i.fas.fa-star {
+                color: var(--red); /* couleur pour l'étoile pleine */
+                font-size: 30px; /* taille des étoiles pour mieux visualiser */
+            }
+            
+        }
     }
-         &.filled i.fas.fa-star {
-            color: var(--red); /* couleur pour l'étoile pleine */
-            font-size: 30px; /* taille des étoiles pour mieux visualiser */
-          }
-       
-    }
-}
+

@@ -3,7 +3,7 @@
 .box-appart {
   color: #333;
   display: flex;
-  width: 100%;
+  width: 98%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
@@ -16,7 +16,7 @@
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
-  width: 49%;
+  width: 48%;
   height: fit-content;
   /* Hauteur standardisée */
   max-height: 300px;
@@ -31,6 +31,7 @@
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
+  height: 52px;
 }
 
 .Conteiner-header span {
@@ -50,7 +51,7 @@
 .Conteiner-content.open {
   display: block;
   background-color: var(--gris);
-  height: 300px;
+  height: 250px;
 }
 
 .Conteiner-content.open p {
@@ -58,6 +59,10 @@
   font-weight: 400;
   background-color: inherit;
   color: var(--red);
+}
+
+.Conteiner-content.open ul {
+  margin: 15px 0 0 -30px;
 }
 
 .Conteiner-content.open li {
