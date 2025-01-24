@@ -1,3 +1,4 @@
+/*AFFICHE LES DETAILS D' UN APPARTEMENT */
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar.jsx"; // Importation du composant Navbar

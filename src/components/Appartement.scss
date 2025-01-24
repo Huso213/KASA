@@ -86,8 +86,10 @@
 
 @media screen and (max-width: 768px) {
   .appartement {
+    border: solid red 2px;
     height: 300px;
     width: 100%;
+    
 
     & h1 {
       width: 25%;
