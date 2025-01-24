@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layout/Navbar.jsx"; // Importation du composant Navbar
 import Footer from "../components/layout/Footer.jsx";
 import AppartementDescription from "../components/AppartementDescription";
 import data from "../data/info.json";
@@ -99,7 +99,7 @@ function Appartementpage() {
               key={index}
               className={index < apartment.rating ? "filled" : ""}
             >
-              <i class="fas fa-star"></i>
+              <i className="fas fa-star"></i>
             </span>
           ))}
         </div>
