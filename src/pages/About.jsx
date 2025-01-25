@@ -2,7 +2,7 @@ import React from "react";
 import "../pages/About.scss";
 
 import Banner from "../components/layout/Banner";
-import "../components/layout/Navbar.scss";
+import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import Conteiner from "../components/Conteiner";
 

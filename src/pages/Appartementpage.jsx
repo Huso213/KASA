@@ -66,46 +66,56 @@ function Appartementpage() {
 
       {/* Informations sous image l'appartement */}
       <div className="infoappart">
-        <div className="nomappart">
-          <h1>{apartment.title}</h1>
-          <h2>{apartment.location}</h2>
-        </div>
-        {/* Nom et photo de l'hôte */}
-        <div className="badge">
-          <h3>{apartment.host?.name || "Nom de l'hôte indisponible"}</h3>
 
-          <div className="badgeutilisat">
-            <img
-              src={apartment.host?.picture || ""}
-              alt={`Profil de ${apartment.host?.name || "hôte"}`}
-              className="host-picture"
-            />
+
+        <div className="bloc-1">
+          {/* Nom et localisation des appart */}
+          <div className="nomappart">
+            <h1>{apartment.title}</h1>
+            <h2>{apartment.location}</h2>
+          </div>
+
+          {/*boitier tags */}
+
+          <div className="textapparttitresous">
+            {apartment.tags?.map((tag, index) => (
+              <p key={index} className="tag">
+                {tag}
+              </p>
+            ))}{""}
+          </div>
+
+        </div>
+
+        {/*Badge et etoile */}
+
+        <div className="bloc-2">
+          {/* Nom et photo de l'hôte */}
+          <div className="badge">
+            <h3>{apartment.host?.name || "Nom de l'hôte indisponible"}</h3>
+
+            <div className="badgeutilisat">
+              <img
+                src={apartment.host?.picture || ""}
+                alt={`Profil de ${apartment.host?.name || "hôte"}`}
+                className="host-picture"
+              />
+            </div>
+          </div>
+          {/* Etoiles de notation */}
+          <div className="etoile">
+            {[...Array(5)].map((_, index) => (
+              <span
+                key={index}
+                className={index < apartment.rating ? "filled" : ""}
+              >
+                <i className="fas fa-star"></i>
+              </span>
+            ))}
           </div>
         </div>
-      </div>
 
-      {/* Tags et équipements */}
-      <div className="trois-box">
-        <div className="textapparttitresous">
-          {apartment.tags?.map((tag, index) => (
-            <p key={index} className="tag">
-              {tag}
-            </p>
-          ))}{""}
-        </div>
-        {/* Etoiles de notation */}
-        <div className="etoile">
-          {[...Array(5)].map((_, index) => (
-            <span
-              key={index}
-              className={index < apartment.rating ? "filled" : ""}
-            >
-              <i className="fas fa-star"></i>
-            </span>
-          ))}
-        </div>
 
-    
       </div>
 
       {/* Description */}

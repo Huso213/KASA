@@ -6,6 +6,7 @@
     width: 95%;
     margin: auto; // Centrer horizontalement le conteneur
     margin-top: 1.2em;
+
     // Image dans le carrousel
     & img {
         object-fit: cover; // Bonne couverture des images
@@ -53,71 +54,76 @@
         border-radius: 5px;
     }
 }
-//nom appart et localisation
+
 .infoappart {
-    color: var(--red);
-    width: 95%;
     display: flex;
-    margin: 1em 0 0 40px;
+    flex-direction: row;
     justify-content: space-between;
+    margin: 1em 10px 0 45px;
+    width: 94%;
 
-    & .nomappart {
-        width: 100%;
-        & h2{
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0;
-        }
-    }
-
-    .badge {
+    /*Titre - Location - tag */
+    & .bloc-1 {
         color: var(--red);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 
-        & h3 {
-            font-size: 18px;
-            font-weight: 500;
+        & .textapparttitresous {
+            width: 450px;
             display: flex;
-            align-self: center;
-        }
-        & img.host-picture {
-            width: 100px;
-            height: 100px;
-            margin-top: 10px;
-            border-radius: 50%;
-            display: flex;
-            align-self: center;
-        }
-    }
-}
-
-
-//trois box + etoiles
-    
-   .trois-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 95%;
-        justify-self: center;
-        & .textapparttitresous{
-            width: 50%;
-            margin: 1em 0 0 0px;
-            display: flex;
+            justify-content: space-between;
+            gap: 1em;
             flex-direction: row;
-            gap :1em;
-            
+
         }
-        & p{
+
+        & p.tag {
             background-color: var(--red);
             color: var(--blanc);
-            font-size: 18px;
-            font-weight: 500;
-            border-radius: 15px;
-            padding: 5px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            padding: 1em;
+            border-radius: 10px;
+            height: 25px;
+            font-size: 14px;
         }
+    }
+
+    /*Badge utilisateur et etoile */
+    .bloc-2 {
+        margin: 0 10px 0 0;
+        width: auto;
+
+        .badge {
+            display: flex;
+
+
+            & h3 {
+                font-size: 18px;
+                font-weight: 500;
+                display: flex;
+                align-self: center;
+                color: var(--red);
+                width: 50%;
+            }
+
+            & .badgeutilisat {
+                color: var(--red);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & img.host-picture {
+                    width: 100px;
+                    height: 100px;
+                    margin-top: 10px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-self: center;
+                }
+            }
+        }
+
         & .etoile {
             width: 15%;
             padding: 0 1em;
@@ -126,22 +132,125 @@
             align-content: center;
             align-items: center;
             margin: 25px 0 0 0;
-            
+            gap: 10px;
         }
+
         & span {
-            display: inline-block;   /* Permet de manipuler les propriétés de mise en forme */
-            font-size: 30px;          /* Taille de l'étoile */
-            
-            
+            display: inline-block;
+            /* Permet de manipuler les propriétés de mise en forme */
+            font-size: 30px;
+            /* Taille de l'étoile */
+
+
             & i.fas.fa-star {
-                color: var(--star); /* couleur pour l'étoile vide */
-                
+                color: var(--star);
+                /* couleur pour l'étoile vide */
+
             }
+
             &.filled i.fas.fa-star {
-                color: var(--red); /* couleur pour l'étoile pleine */
-                font-size: 30px; /* taille des étoiles pour mieux visualiser */
+                color: var(--red);
+                /* couleur pour l'étoile pleine */
+                font-size: 30px;
+                /* taille des étoiles pour mieux visualiser */
             }
-            
         }
     }
+}
 
+/*PORTALE */
+@media screen and (max-width: 800px) {
+
+
+    .infoappart {
+        display: flex;
+        flex-direction: column;
+        width: 93%;
+        margin: 0;
+        justify-self: center;
+
+
+
+        & .bloc-1 {
+            border: solid 1px hotpink;
+            margin: 0;
+
+
+            & .textapparttitresous {
+                border: solid 1px black;
+                width: 100%;
+                justify-content: flex-start;
+& p{
+    width: 33%;
+    font-size: 14px;
+}
+
+            }
+        }
+
+        & .bloc-2 {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            width: auto;
+            height: 100%;
+            margin: 0;
+            border: solid 2px green;
+
+            & .etoile {
+                grid-area: 1/1/2/2;
+                width: 80%;
+                margin: 0;
+                padding: 0;
+                border: solid;
+                gap: -10px;
+
+
+
+                & span {
+                    display: inline-block;
+                    /* Permet de manipuler les propriétés de mise en forme */
+                    font-size: 20px;
+
+
+                    & i.fas.fa-star {
+                        color: var(--star);
+                        /* couleur pour l'étoile vide */
+
+                    }
+
+                    &.filled i.fas.fa-star {
+                        color: var(--red);
+                        /* couleur pour l'étoile pleine */
+                        font-size: 20px;
+                        /* taille des étoiles pour mieux visualiser */
+                    }
+
+                }
+
+            }
+
+                & .badge {
+                    margin: 0;
+                    width: 100%;
+                    position: relative;
+                    justify-self: end;
+                    border: solid 5px lawngreen;
+
+
+                    & .badgeutilisat {
+                        width: auto;
+
+                        img.host-picture {
+                            margin: 0;
+                            position: static;
+                            border: solid;
+                            width: 50px;
+                            height: 50px;
+                    }
+                }
+
+            }
+        }
+    }
+}

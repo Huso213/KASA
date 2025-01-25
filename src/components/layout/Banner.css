@@ -28,7 +28,8 @@
   width: 100%;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
+px) {
   .banner {
     zoom: 70%;
     display: flex;

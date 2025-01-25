@@ -94,7 +94,7 @@
   align-self: center;
 }
 
-.trois-box {
+.bloc-2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,7 +102,7 @@
   justify-self: center;
 }
 
-.trois-box .textapparttitresous {
+.bloc-2 .textapparttitresous {
   width: 50%;
   margin: 1em 0 0 0px;
   display: flex;
@@ -110,7 +110,7 @@
   gap: 1em;
 }
 
-.trois-box p {
+.bloc-2 p {
   background-color: var(--red);
   color: var(--blanc);
   font-size: 18px;
@@ -119,7 +119,7 @@
   padding: 5px 20px;
 }
 
-.trois-box .etoile {
+.bloc-2 .etoile {
   width: 15%;
   padding: 0 1em;
   display: flex;
@@ -129,19 +129,19 @@
   margin: 25px 0 0 0;
 }
 
-.trois-box span {
+.bloc-2 span {
   display: inline-block;
   /* Permet de manipuler les propriétés de mise en forme */
   font-size: 30px;
   /* Taille de l'étoile */
 }
 
-.trois-box span i.fas.fa-star {
+.bloc-2 span i.fas.fa-star {
   color: var(--star);
   /* couleur pour l'étoile vide */
 }
 
-.trois-box span.filled i.fas.fa-star {
+.bloc-2 span.filled i.fas.fa-star {
   color: var(--red);
   /* couleur pour l'étoile pleine */
   font-size: 30px;

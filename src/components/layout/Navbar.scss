@@ -1,4 +1,5 @@
 /*LOgo*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -73,7 +74,7 @@
     }
 }
 /*TABLETTE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .navbar {
         width: 98%;
     }
@@ -82,7 +83,7 @@
         width: auto;
     }
     .logo img {
-        width: auto;
+        width: 145px;
     }
     .nav-links {
         width: auto;
@@ -93,57 +94,25 @@
 
 /*MOBILE */
 @media screen and (max-width: 568px) {
-    .logo img {
-        width: auto;
-        margin: 0 0 0 15px;
+   .navbar{
+    zoom: 80%;
+    width: auto;
+    & .nav-links{
+        zoom: 90%;
+        width: fit-content;
     }
+   }
 
-    .nav-links {
-        width: 35%;
-        margin: 0 30px 0 0;
-        text-transform: uppercase;
-
-        & a {
-            font-size: 17px;
-            font-weight: 500;
-            text-align: right;
-            margin: 0;
-        }
-    }
-    .nav-links a.active {
-        border-bottom: 3px solid;
-        text-decoration: none;
-
-        &:hover {
-            border-bottom: var(--red) 3px solid;
-            
-        }
-    }
 }
 
-/*MOBILE */
-@media screen and (max-width: 508px) {
-    .navbar {
-        width: 99%;
-        margin: 30px 0 0 0;
+@media screen and (max-width: 387px) {
+    .navbar{
+     zoom: 70%;
+     width: auto;
+     & .nav-links{
+         zoom: 90%;
+         width: fit-content;
+     }
     }
-
-    .nav-links {
-        width: 50%;
-        margin: 0 0 0 30px;
-        padding: 0;
-        justify-content: space-around;
-
-        display: flex;
-        & a {
-            font-size: 19px;
-            margin: 0 0 0 3px;
-            font-weight: 400;
-        }    
-    }
-    .logo  img{
-        width: 90%;
-        margin: 0 0 0 20px;
-
-    }
-}
+ 
+ }
