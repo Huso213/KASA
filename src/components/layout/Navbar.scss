@@ -1,46 +1,46 @@
-/*LOgo*/
-
+/* Navbar principale */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5rem; /* Utilise les unités relatives */
     color: var(--red);
     font-weight: 500;
     height: 68px;
     margin-top: 2em;
+    padding: 0 16px; /* Espacement général */
     width: 100%;
-
 }
+
+/* Logo */
 .logo {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    align-items: center;
 }
-/* Espace a droite du logo*/
 .logo img {
     height: 68px;
-    margin: 0 0 0 2.5em;
-    width: 210px;
-    height: 68px;
+    width: auto;
+    margin-left: 40px;
 }
-.nav-links{
-    width: 18%;
 
+/* Liens */
+.nav-links {
+    display: flex;
+    gap: 16px; /* Remplace margin-right pour éviter les problèmes */
 }
+
 .nav-links a {
-    text-decoration: none;
+    text-decoration: none;/*cacher la ligne */
     color: var(--red);
-    width: 30%;
-    margin-right: 1em;
     font-size: 24px;
-
+    font-weight: 500;
+    padding: 8px 12px; /* Espacement autour du texte */
+    
     /*barre en dessous boutons*/
-    & :hover {
-        border-bottom: var(--red) 3px solid;
-    }
+    &:hover {
+            border-bottom: var(--red) 3px solid;
+        }
 }
-
 /*indiquer la page actuel avec la barre */
 .nav-links a.active {
     text-decoration: underline;
@@ -49,70 +49,49 @@
     text-decoration: none;
 }
 
-/*pour media queries*/
+/* Responsivité */
 @media screen and (max-width: 1268px) {
     .navbar {
+        margin: 1em auto;
         width: 98%;
-        margin: 1em 0 0 10px;
     }
     .logo img {
-        display: flex;
-        margin: 0 0 0 1em;
-        width: auto;
+        margin-left: 1em;
     }
 
     .nav-links {
-        width: 30%;
-        margin-right: 2em;
-        display: flex;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .logo img {
+        margin-left: 0;
+        width: 145px;
+    }
+
+
+}
+
+@media screen and (max-width: 568px) {
+    .nav-links {
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .nav-links a {
-        width: auto;
-        font-size: 90%;
-        margin: 0 10px 0px 0;
+        font-size: 0.8rem;
     }
-}
-/*TABLETTE */
-@media screen and (max-width: 800px) {
-    .navbar {
-        width: 98%;
-    }
-
-    .logo {
-        width: auto;
-    }
-    .logo img {
-        width: 145px;
-    }
-    .nav-links {
-        width: auto;
-        margin-right: 1em;
-        text-transform: uppercase;
-    }
-}
-
-/*MOBILE */
-@media screen and (max-width: 568px) {
-   .navbar{
-    zoom: 80%;
-    width: auto;
-    & .nav-links{
-        zoom: 90%;
-        width: fit-content;
-    }
-   }
-
 }
 
 @media screen and (max-width: 387px) {
-    .navbar{
-     zoom: 70%;
-     width: auto;
-     & .nav-links{
-         zoom: 90%;
-         width: fit-content;
-     }
+    .nav-links a {
+        font-size: 0.7rem;
+        padding: 4px 8px;
     }
- 
- }
+}

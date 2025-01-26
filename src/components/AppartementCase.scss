@@ -1,21 +1,31 @@
 
 .AppartementCase {
   background-color: var(--gris);
-  margin: 3em 0px 0 0px;
-  padding: 50px 0em 0em 0em;
-  width: 98%;
+  flex-wrap: wrap; /* Permet le passage à une nouvelle ligne */
+  gap: 5px; /* Espacement entre les éléments */
+  justify-content: center; /* Centre les éléments horizontalement */
+  //padding: 16px;
+  width: 95%; /* Prend toute la largeur de la page */
   border-radius: 25px;
+  margin-top: 3em;
+  border: solid 2px maroon;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30px;
+    grid-row-gap: 30px; // verticalement
+    padding: 3em 30px 7em 30px;//espacement a droite a gauche de la page */  
+  
+& .a{
+  width: max-content;
+  height: max-content;
+}
+
 }
 
 
-@media screen and (max-width: 1255px) {
-  .AppartementCase {
-    width: 95%;
-    margin: 16em 0px 0 0px;
 
-  }
-
-}
 
 /*-*-*-*-*-*-MOBILE*-*-*-*-*-*-*-*-*-*/
 /*TABLETTE */
