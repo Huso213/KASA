@@ -50,10 +50,8 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: -25px;
   grid-row-gap: 50px;
-  height: 100%;
-  width: 94%;
-  justify-self: center;
-  padding-bottom: 5em;
+  
+ 
   & a{
     //width: max-content;
     margin: 0 0 0 25px;
@@ -91,8 +89,9 @@
 	grid-template-rows: repeat(1, 1fr);
 	grid-template-columns: repeat(1, 1fr);
 	gap: 35px;
-	width: 100%;
+	width: 110%;
 	height: 100%;
+  margin: 0 25px 0 0;
 
   & .appartement {
     border: solid red 2px;
@@ -101,7 +100,7 @@
    
 
     & h1 {
-      width: 25%;
+      width: 50%;
     }
   }
 }}

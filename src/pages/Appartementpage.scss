@@ -175,7 +175,19 @@
             border: solid 1px hotpink;
             margin: 0;
 
-
+& .nomappart{
+    border: solid 5px purple;
+    & h1{
+        font-size: 18px;
+        width: 335px;
+        font-weight: 500;
+        border: solid 2px gold;
+    }
+    & h2{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
             & .textapparttitresous {
                 border: solid 1px black;
                 width: 100%;
@@ -232,7 +244,6 @@
 
                 & .badge {
                     margin: 0;
-                    width: 100%;
                     position: relative;
                     justify-self: end;
                     border: solid 5px lawngreen;
