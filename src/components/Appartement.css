@@ -58,14 +58,20 @@
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
     gap: 35px;
-    width: 110%;
+    width: 95%;
     height: 100%;
-    margin: 0 25px 0 0;
+    justify-self: center;
+    margin: 0 0 0 0;
   }
   .AppartementCase .appartement {
     border: solid red 2px;
     height: 300px;
+    max-height: 250px;
     width: 100%;
+    max-width: -webkit-fill-available;
+    padding: 0;
+    margin: 0;
+    top: -20px;
   }
   .AppartementCase .appartement h1 {
     width: 50%;

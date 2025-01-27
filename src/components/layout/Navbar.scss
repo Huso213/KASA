@@ -8,8 +8,8 @@
     font-weight: 500;
     height: 68px;
     margin-top: 2em;
-    padding: 0 16px; /* Espacement général */
-    width: 100%;
+    padding: 0; /* Espacement général */
+    width: 97%;
 }
 
 /* Logo */
@@ -49,49 +49,47 @@
     text-decoration: none;
 }
 
-/* Responsivité */
-@media screen and (max-width: 1268px) {
-    .navbar {
-        margin: 1em auto;
-        width: 98%;
-    }
-    .logo img {
-        margin-left: 1em;
-    }
 
-    .nav-links {
-        gap: 12px;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-        padding: 6px 10px;
-    }
-}
 
 @media screen and (max-width: 800px) {
-    
+    .navbar{
+        width: 95%;
+        border: solid 1px;
+        margin:1.5em 15px 0 15px;
+
     .logo img {
         margin-left: 0;
         width: 145px;
     }
+}
 
 
 }
 
 @media screen and (max-width: 568px) {
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: space-between;
+        border: solid 1px;
     }
     .nav-links a {
-        font-size: 0.8rem;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 387px) {
-    .nav-links a {
-        font-size: 0.7rem;
-        padding: 4px 8px;
+    .navbar{
+        width: 95%;
+        margin: 0 10px;
+
+    .logo img {
+        margin-left: 0;
+        width: 120px;
     }
+    .nav-links{
+        gap: 5px;
+     a {
+        font-size: 10px;
+        margin: 0 0px;
+    }
+    }
+}
 }

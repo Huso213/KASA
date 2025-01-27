@@ -143,3 +143,15 @@
   color: #fff;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 800px) {
+  .box-appart {
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    padding: 0;
+  }
+  .box-appart .Conteiner-container {
+    width: 99.8%;
+  }
+}
