@@ -6,6 +6,7 @@ import{ErrorPage} from "./pages/ErrorPage.jsx"; //message d'erreur 404 si la pag
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About.jsx";
 import Appartement from "./pages/Appartementpage.jsx";
+import  "./components/scss/variables.scss"; //importer variables de style
 
 const router = createBrowserRouter([
   {

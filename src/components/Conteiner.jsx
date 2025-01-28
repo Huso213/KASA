@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "../data/About.json"; // Vérifiez le chemin du fichier
 import "../components/Conteiner.scss";
-
+import "../components/scss/variables.scss"
 const Conteiner = () => {
   const [openSections, setOpenSections] = useState({});
 

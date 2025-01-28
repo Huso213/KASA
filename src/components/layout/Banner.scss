@@ -1,3 +1,5 @@
+@import "../../components/scss/variables.scss";
+
 .banner {
   background-image: url("/IMG.jpg");
   background-size: cover;
@@ -13,7 +15,7 @@
   margin-top: 40px;
 
   & h1 {
-    color: var(--blanc);
+    color: $blanc;
     font-size: 48px;
     font-weight: 500;
     display: flex;

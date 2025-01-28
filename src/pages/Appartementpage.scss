@@ -1,3 +1,6 @@
+@import "../components/scss/variables.scss";
+
+
 .pageappart {
     //Bouton Accueil ligne doit etre visible
     .nav-links {
@@ -28,7 +31,7 @@
         // Boutons de navigation
         & .carousel-button {
             background-color: inherit;
-            color: var(--blanc);
+            color: $blanc;
             border: none;
             border-radius: 50%;
             cursor: pointer;
@@ -57,7 +60,7 @@
             font-size: 18px;
             font-weight: 500;
             text-align: center;
-            color: var(--blanc);
+            color: $blanc;
             position: absolute; // Position relative à `.imgappart`
             bottom: 10px;
             padding: 5px 10px;
@@ -74,7 +77,7 @@
 
         /*Titre - Location - tag */
         & .bloc-1 {
-            color: var(--red);
+            color: $red;
 
             & .textapparttitresous {
                 width: 450px;
@@ -85,8 +88,8 @@
             }
 
             & p.tag {
-                background-color: var(--red);
-                color: var(--blanc);
+                background-color: $red;
+                color: $blanc;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -111,12 +114,12 @@
                     font-weight: 500;
                     display: flex;
                     align-self: center;
-                    color: var(--red);
+                    color: $red;
                     width: 50%;
                 }
 
                 & .badgeutilisat {
-                    color: var(--red);
+                    color: $red;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -150,12 +153,12 @@
                 /* Taille de l'étoile */
 
                 & i.fas.fa-star {
-                    color: var(--star);
+                    color: $star;
                     /* couleur pour l'étoile vide */
                 }
 
                 &.filled i.fas.fa-star {
-                    color: var(--red);
+                    color: $red;
                     /* couleur pour l'étoile pleine */
                     font-size: 30px;
                     /* taille des étoiles pour mieux visualiser */
@@ -244,12 +247,12 @@
                         font-size: 20px;
 
                         & i.fas.fa-star {
-                            color: var(--star);
+                            color: $star;
                             /* couleur pour l'étoile vide */
                         }
 
                         &.filled i.fas.fa-star {
-                            color: var(--red);
+                            color: $red;
                             /* couleur pour l'étoile pleine */
                             font-size: 20px;
                             /* taille des étoiles pour mieux visualiser */

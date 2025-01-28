@@ -12,21 +12,21 @@
 }
 .error{
     & h1 {
-        color: var(--red);
+        color: $red;
         font-size: 288px;
         font-weight: bold;
         margin-top: -10px;
     }
 
     & p {
-        color: var(--red);
+        color: $red;
         font-size: 20px;
         margin-top: -10em;
         margin-bottom: 5em;
     }
     & a {
         font-size: 18px;
-        color: var(--red);
+        color: $red;
         text-decoration: none;
 
         &:hover {
@@ -42,14 +42,14 @@ margin-top: 2em;
     }
 
     & h1 {
-        color: var(--red);
+        color: $red;
         font-size: 180px;
         font-weight: bold;
         margin-top: -10px;
     }
 
     & p {
-        color: var(--red);
+        color: $red;
         font-size: 18px;
         margin-top: 0;
         margin-bottom: 5em;

@@ -12,9 +12,8 @@
   height: 223px;
   margin-top: 40px;
 }
-
 .banner h1 {
-  color: var(--blanc);
+  color: #ffffff;
   font-size: 48px;
   font-weight: 500;
   display: flex;
@@ -51,7 +50,6 @@
     left: 10%;
   }
 }
-
 @media screen and (max-width: 600px) {
   .banner {
     height: 90%;
@@ -60,4 +58,4 @@
     font-size: 25px;
     font-weight: 500;
   }
-}
+}/*# sourceMappingURL=Banner.css.map */

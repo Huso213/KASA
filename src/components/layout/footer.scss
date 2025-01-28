@@ -1,6 +1,8 @@
+@import "../../components/scss/variables.scss";
+
 .footer {
-    background-color: #000000;
-    color: white;
+    background-color: $noir;
+    color: $blanc;
     padding: 20px;
     min-height: 200px;
     width: 100%;

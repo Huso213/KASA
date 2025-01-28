@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Appartement.scss";
 import { Link } from "react-router-dom";
+import "./scss/variables.scss";
 
 function Appartement({ id, imageUrl, title }) {
   return (

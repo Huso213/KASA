@@ -1,31 +1,18 @@
-/*AFFICHE LES DETAILS D' UN APPARTEMENT */
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import Navbar from "../components/layout/Navbar.jsx"; // Importation du composant Navbar
+// src/pages/Appartementpage.jsx
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../components/layout/Navbar.jsx";
 import Footer from "../components/layout/Footer.jsx";
 import AppartementDescription from "../components/AppartementDescription";
-import data from "../data/info.json";
+import useAppartement from "../Hook/useAppartement.jsx"; // Importation du hook
 import "../pages/Appartementpage.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../components/scss/variables.scss"
 
 function Appartementpage() {
-  const { id } = useParams(); // Récupération de l'ID depuis l'URL
-  const navigate = useNavigate();
-
-  const [apartment, setApartment] = useState(null); // Stocke les données de l'appartement
-  const [currentIndex, setCurrentIndex] = useState(0); // Gestion du carrousel
-
-  useEffect(() => {
-    // Recherche de l'appartement par ID
-    const foundApartment = data.find((apt) => apt.id === id);
-    if (foundApartment) {
-      setApartment(foundApartment);
-    } else {
-      // Redirige vers la page d'erreur si l'ID n'est pas valide
-      navigate("/404");
-    }
-  }, [id, navigate]);
+  const apartment = useAppartement(); // Utilisation du hook
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!apartment) {
     return <div>Chargement...</div>;
@@ -46,7 +33,6 @@ function Appartementpage() {
   return (
     <div className="pageappart">
       <Navbar />
-      {/* Carrousel */}
       <div className="imgappart">
         <button onClick={prevImage} className="carousel-button">
           ❮
@@ -64,36 +50,24 @@ function Appartementpage() {
         </button>
       </div>
 
-      {/* Informations sous image l'appartement */}
       <div className="infoappart">
-
-
         <div className="bloc-1">
-          {/* Nom et localisation des appart */}
           <div className="nomappart">
             <h1>{apartment.title}</h1>
             <h2>{apartment.location}</h2>
           </div>
-
-          {/*boitier tags */}
-
           <div className="textapparttitresous">
             {apartment.tags?.map((tag, index) => (
               <p key={index} className="tag">
                 {tag}
               </p>
-            ))}{""}
+            ))}
           </div>
-
         </div>
 
-        {/*Badge et etoile */}
-
         <div className="bloc-2">
-          {/* Nom et photo de l'hôte */}
           <div className="badge">
             <h3>{apartment.host?.name || "Nom de l'hôte indisponible"}</h3>
-
             <div className="badgeutilisat">
               <img
                 src={apartment.host?.picture || ""}
@@ -102,7 +76,6 @@ function Appartementpage() {
               />
             </div>
           </div>
-          {/* Etoiles de notation */}
           <div className="etoile">
             {[...Array(5)].map((_, index) => (
               <span
@@ -114,11 +87,8 @@ function Appartementpage() {
             ))}
           </div>
         </div>
-
-
       </div>
 
-      {/* Description */}
       <div className="box-container">
         <AppartementDescription description={apartment.description} />
       </div>

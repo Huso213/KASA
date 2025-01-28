@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.scss";
+import "../scss/variables.scss"
 function Banner() {
   return (
     <div className="banner">
