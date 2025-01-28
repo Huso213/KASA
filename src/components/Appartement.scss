@@ -14,7 +14,6 @@
   flex-direction: column;
   overflow: hidden;
   justify-content: center;
-  border: solid 2px greenyellow;
   top: 2em;
   &:hover {
     animation: scale-up-center 2s linear 0s 1 normal none;
@@ -72,7 +71,6 @@
   margin: 0 0 0 0;
 
   & .appartement {
-    border: solid red 2px;
     height: 300px;
     max-height: 250px;
     width: 100%;

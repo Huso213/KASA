@@ -1,0 +1,1 @@
+.footer{background-color:#000000;color:white;padding:20px;min-height:200px;width:100%;margin-top:5em;display:flex;flex-direction:column;justify-content:center;align-items:center}.footer h3{font-weight:500;font-size:24px;display:flex;justify-content:center}.logofooter{width:125px;height:40px}@media screen and (max-width: 800px){.footer{margin-top:0em}.footer h3{font-size:12px}}

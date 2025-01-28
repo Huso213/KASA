@@ -9,7 +9,7 @@ function AppartementCase() {
   useEffect(() => {
     // Charger les données des appartements depuis le fichier JSON
     setAppartements(data);
-  }, []);
+  }, []); // Le tableau vide [] indique que le composant doit être exécuté une seule fois
 
   return (
     <div className="AppartementCase">

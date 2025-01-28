@@ -61,7 +61,6 @@
 @media screen and (max-width: 800px) {
   .navbar {
     width: 95%;
-    border: solid 1px;
     margin: 1.5em 15px 0 15px;
   }
   .navbar .logo img {
@@ -71,9 +70,6 @@
 }
 
 @media screen and (max-width: 568px) {
-  .nav-links {
-    border: solid 1px;
-  }
   .nav-links a {
     font-size: 12px;
   }

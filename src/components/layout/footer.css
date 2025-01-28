@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .footer h3 {
   font-weight: 500;
   font-size: 24px;
@@ -22,8 +23,11 @@
   height: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .footer {
-    margin-top: 5em;
+    margin-top: 0em;
   }
-}/*# sourceMappingURL=footer.css.map */
+  .footer h3 {
+    font-size: 12px;
+  }
+}

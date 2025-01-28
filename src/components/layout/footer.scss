@@ -22,8 +22,12 @@
     width: 125px;
     height: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .footer {
         margin-top: 0em;
+& h3{
+    font-size: 12px;
+}
+
     }
 }
