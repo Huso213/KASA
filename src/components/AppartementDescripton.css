@@ -7,17 +7,18 @@
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #fff;
   gap: 3em;
   /* Section Conteiner */
 }
+
 .box-appart .Conteiner-container {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
   width: 48%;
-  height: -moz-fit-content;
-  height: fit-content; /* Hauteur standardisée */
+  height: fit-content;
+  /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -25,8 +26,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff6060;
-  color: #ffffff;
+  background-color: var(--red);
+  color: var(--blanc);
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
@@ -49,18 +50,21 @@
 
 .Conteiner-content.open {
   display: block;
-  background-color: #F6F6F6;
+  background-color: var(--gris);
   height: 250px;
 }
+
 .Conteiner-content.open p {
   font-size: 18px;
   font-weight: 400;
   background-color: inherit;
-  color: #ff6060;
+  color: var(--red);
 }
+
 .Conteiner-content.open ul {
   margin: 15px 0 0 -30px;
 }
+
 .Conteiner-content.open li {
   font-size: 18px;
   font-weight: 400;
@@ -69,7 +73,7 @@
   font-size: 18px;
   font-weight: 400;
   background-color: inherit;
-  color: #ff6060;
+  color: var(--red);
   display: flex;
   margin-bottom: 10px;
 }
@@ -79,8 +83,8 @@
   border-radius: 10px;
   overflow: hidden;
   width: 49%;
-  height: -moz-fit-content;
-  height: fit-content; /* Hauteur standardisée */
+  height: fit-content;
+  /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -88,8 +92,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff6060;
-  color: #ffffff;
+  background-color: var(--red);
+  color: var(--blanc);
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
@@ -113,9 +117,9 @@
 
 .equipment-content.open {
   display: block;
-  background-color: #F6F6F6;
+  background-color: var(--gris);
   height: 300px;
-  color: #ff6060;
+  color: var(--red);
 }
 
 /* Liste des équipements */
@@ -150,4 +154,4 @@
   .box-appart .Conteiner-container {
     width: 99.8%;
   }
-}/*# sourceMappingURL=AppartementDescripton.css.map */
+}

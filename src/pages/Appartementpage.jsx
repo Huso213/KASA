@@ -8,7 +8,6 @@ import useAppartement from "../Hook/useAppartement.jsx"; // Importation du hook
 import "../pages/Appartementpage.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../components/scss/variables.scss"
 
 function Appartementpage() {
   const apartment = useAppartement(); // Utilisation du hook

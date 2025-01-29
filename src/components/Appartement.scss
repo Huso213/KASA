@@ -1,4 +1,3 @@
-@import "../components/scss/variables.scss";
 
 
 .appartement {
@@ -22,7 +21,7 @@
 
   
   & h1 {
-    color: $blanc;
+    color: var(--blanc);
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;

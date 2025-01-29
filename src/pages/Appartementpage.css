@@ -2,9 +2,11 @@
 .pageappart .nav-links.nav-links a:first-child {
   text-decoration: underline;
 }
+
 .pageappart .nav-links.nav-links a:first-child:hover {
   text-decoration: none;
 }
+
 .pageappart .imgappart {
   position: relative;
   display: flex;
@@ -14,16 +16,17 @@
   margin: auto;
   margin-top: 1.2em;
 }
+
 .pageappart .imgappart img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 415px;
   border-radius: 25px;
 }
+
 .pageappart .imgappart .carousel-button {
   background-color: inherit;
-  color: #ffffff;
+  color: var(--blanc);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -34,25 +37,30 @@
   transform: translateY(-50%);
   z-index: 10;
 }
+
 .pageappart .imgappart .carousel-button:hover {
   background-color: inherit;
 }
+
 .pageappart .imgappart .carousel-button:first-of-type {
   left: 10px;
 }
+
 .pageappart .imgappart .carousel-button:last-of-type {
   right: 10px;
 }
+
 .pageappart .imgappart .carousel-counter {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  color: #ffffff;
+  color: var(--blanc);
   position: absolute;
   bottom: 10px;
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 .pageappart .infoappart {
   display: flex;
   flex-direction: row;
@@ -62,9 +70,11 @@
   /*Titre - Location - tag */
   /*Badge utilisateur et etoile */
 }
+
 .pageappart .infoappart .bloc-1 {
-  color: #ff6060;
+  color: var(--red);
 }
+
 .pageappart .infoappart .bloc-1 .textapparttitresous {
   width: 450px;
   display: flex;
@@ -72,9 +82,10 @@
   gap: 1em;
   flex-direction: row;
 }
+
 .pageappart .infoappart .bloc-1 p.tag {
-  background-color: #ff6060;
-  color: #ffffff;
+  background-color: var(--red);
+  color: var(--blanc);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,27 +95,32 @@
   height: 25px;
   font-size: 14px;
 }
+
 .pageappart .infoappart .bloc-2 {
   margin: 0 10px 0 0;
   width: auto;
 }
+
 .pageappart .infoappart .bloc-2 .badge {
   display: flex;
 }
+
 .pageappart .infoappart .bloc-2 .badge h3 {
   font-size: 18px;
   font-weight: 500;
   display: flex;
   align-self: center;
-  color: #ff6060;
+  color: var(--red);
   width: 50%;
 }
+
 .pageappart .infoappart .bloc-2 .badge .badgeutilisat {
-  color: #ff6060;
+  color: var(--red);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .pageappart .infoappart .bloc-2 .badge .badgeutilisat img.host-picture {
   width: 100px;
   height: 100px;
@@ -113,6 +129,7 @@
   display: flex;
   align-self: center;
 }
+
 .pageappart .infoappart .bloc-2 .etoile {
   width: 15%;
   padding: 0 1em;
@@ -123,18 +140,21 @@
   margin: 25px 0 0 0;
   gap: 10px;
 }
+
 .pageappart .infoappart .bloc-2 span {
   display: inline-block;
   /* Permet de manipuler les propriétés de mise en forme */
   font-size: 30px;
   /* Taille de l'étoile */
 }
+
 .pageappart .infoappart .bloc-2 span i.fas.fa-star {
-  color: #E3E3E3;
+  color: var(--star);
   /* couleur pour l'étoile vide */
 }
+
 .pageappart .infoappart .bloc-2 span.filled i.fas.fa-star {
-  color: #ff6060;
+  color: var(--red);
   /* couleur pour l'étoile pleine */
   font-size: 30px;
   /* taille des étoiles pour mieux visualiser */
@@ -205,11 +225,11 @@
     font-size: 20px;
   }
   .pageappart .infoappart .bloc-2 .etoile span i.fas.fa-star {
-    color: #E3E3E3;
+    color: var(--star);
     /* couleur pour l'étoile vide */
   }
   .pageappart .infoappart .bloc-2 .etoile span.filled i.fas.fa-star {
-    color: #ff6060;
+    color: var(--red);
     /* couleur pour l'étoile pleine */
     font-size: 20px;
     /* taille des étoiles pour mieux visualiser */
@@ -233,6 +253,7 @@
     height: 50px;
   }
 }
+
 /* correction*/
 @media screen and (max-width: 569px) {
   .pageappart .navbar {
@@ -242,4 +263,4 @@
   .pageappart .navbar .nav-links a {
     font-size: 14px;
   }
-}/*# sourceMappingURL=Appartementpage.css.map */
+}

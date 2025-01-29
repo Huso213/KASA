@@ -1,25 +1,27 @@
 @charset "UTF-8";
 .AppartementCase {
-  background-color: #F6F6F6;
-  flex-wrap: wrap; /* Permet le passage à une nouvelle ligne */
-  gap: 5px; /* Espacement entre les éléments */
-  justify-content: center; /* Centre les éléments horizontalement */
-  width: 95%; /* Prend toute la largeur de la page */
+  background-color: var(--gris);
+  flex-wrap: wrap;
+  /* Permet le passage à une nouvelle ligne */
+  gap: 5px;
+  /* Espacement entre les éléments */
+  justify-content: center;
+  /* Centre les éléments horizontalement */
+  width: 95%;
+  /* Prend toute la largeur de la page */
   border-radius: 25px;
   margin-top: 3em;
   display: grid;
   justify-self: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   grid-row-gap: 30px;
   padding: 3em 30px 7em 30px;
 }
+
 .AppartementCase .a {
-  width: -moz-max-content;
   width: max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 
@@ -29,4 +31,4 @@
   .AppartementCase {
     background-color: inherit;
   }
-}/*# sourceMappingURL=AppartementCase.css.map */
+}
