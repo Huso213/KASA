@@ -7,7 +7,6 @@ import Footer from "./components/layout/Footer.jsx";
 import Main from "./components/layout/Main.jsx";
 import Navbar from "./components/layout/Navbar.jsx";
 
-
 function App() {
   return (
     <div>

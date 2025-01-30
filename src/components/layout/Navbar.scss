@@ -1,10 +1,13 @@
+@import "../../components/scss/variables.scss";
+
+
 /* Navbar principale */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem; /* Utilise les unités relatives */
-    color: var(--red);
+    color: $red;
     font-weight: 500;
     height: 68px;
     margin-top: 2em;
@@ -31,14 +34,14 @@
 
 .nav-links a {
     text-decoration: none;/*cacher la ligne */
-    color: var(--red);
+    color: $red;
     font-size: 24px;
     font-weight: 500;
     padding: 8px 12px; /* Espacement autour du texte */
     
     /*barre en dessous boutons*/
     &:hover {
-            border-bottom: var(--red) 3px solid;
+            border-bottom: $red 3px solid;
         }
 }
 /*indiquer la page actuel avec la barre */
@@ -54,10 +57,11 @@
 @media screen and (max-width: 800px) {
     .navbar{
         width: 95%;
-        //border: solid 1px;
+        border: solid green 1px;
         margin:1.5em 15px 0 15px;
-
-    .logo img {
+        
+        .logo img {
+        height: 50px;
         margin-left: 0;
         width: 145px;
     }

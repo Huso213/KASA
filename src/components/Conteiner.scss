@@ -1,3 +1,5 @@
+@import "./scss/variables.scss";
+
 .box-about {
   width: 95%;
   display: flex;
@@ -12,7 +14,7 @@
 }
 .Conteiner-titre {
   width: 100%;
-  background-color: var(--red);
+  background-color: $red;
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -34,9 +36,9 @@
   &.open{
   height: auto;
   border-radius: 5px;
-    background-color: var(--gris);
+    background-color: $gris;
     font-size: 18px;
-    color: var(--red);
+    color: $red;
 }
 }
 

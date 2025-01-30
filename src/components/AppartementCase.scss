@@ -1,6 +1,7 @@
+@import "./scss/variables.scss";
 
 .AppartementCase {
-  background-color: var(--gris);
+  background-color: $gris;
   flex-wrap: wrap; /* Permet le passage à une nouvelle ligne */
   gap: 5px; /* Espacement entre les éléments */
   justify-content: center; /* Centre les éléments horizontalement */

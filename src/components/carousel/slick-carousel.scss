@@ -1,3 +1,5 @@
+@import ".././scss/variables.scss";
+
 .imgappart {
   position: relative;
   display: flex;
@@ -13,7 +15,7 @@
 
 .carousel-button {
   background-color: inherit;
-  color: var(--blanc);
+  color: $blanc;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -42,7 +44,7 @@
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  color: var(--blanc);
+  color: $blanc;
   display: flex;
   position: absolute;
   top: 80%;
