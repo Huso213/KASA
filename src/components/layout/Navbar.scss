@@ -1,17 +1,18 @@
 @import "../../components/scss/variables.scss";
 
-
 /* Navbar principale */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem; /* Utilise les unités relatives */
+    font-size: 1.5rem;
+    /* Utilise les unités relatives */
     color: $red;
     font-weight: 500;
     height: 68px;
     margin-top: 2em;
-    padding: 0; /* Espacement général */
+    padding: 0;
+    /* Espacement général */
     width: 97%;
 }
 
@@ -20,6 +21,7 @@
     display: flex;
     align-items: center;
 }
+
 .logo img {
     height: 68px;
     width: auto;
@@ -29,71 +31,75 @@
 /* Liens */
 .nav-links {
     display: flex;
-    gap: 16px; /* Remplace margin-right pour éviter les problèmes */
+    gap: 16px;
+    /* Remplace margin-right pour éviter les problèmes */
 }
 
 .nav-links a {
-    text-decoration: none;/*cacher la ligne */
+    text-decoration: none;
+    /*cacher la ligne */
     color: $red;
     font-size: 24px;
     font-weight: 500;
-    padding: 8px 12px; /* Espacement autour du texte */
-    
+    padding: 8px 12px;
+    /* Espacement autour du texte */
+
     /*barre en dessous boutons*/
     &:hover {
-            border-bottom: $red 3px solid;
-        }
+        border-bottom: $red 3px solid;
+    }
 }
+
 /*indiquer la page actuel avec la barre */
 .nav-links a.active {
     text-decoration: underline;
 }
+
 .nav-links a.active:hover {
     text-decoration: none;
 }
 
-
-
 @media screen and (max-width: 800px) {
-    .navbar{
+    .navbar {
         width: 95%;
         border: solid green 1px;
-        margin:1.5em 15px 0 15px;
-        
+        margin: 25px 15px 0 15px;
+
         .logo img {
-        height: 50px;
-        margin-left: 0;
-        width: 145px;
+            height: 50px;
+            margin-left: 0;
+            width: 145px;
+        }
     }
-}
-
-
 }
 
 @media screen and (max-width: 568px) {
     .nav-links {
         //border: solid 1px;
     }
+
     .nav-links a {
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 387px) {
-    .navbar{
+    .navbar {
         width: 95%;
         margin: 0 10px;
 
-    .logo img {
-        margin-left: 0;
-        width: 120px;
+        .logo img {
+            margin-left: 0;
+            width: 120px;
+        }
+
+        .nav-links {
+            gap: 5px;
+
+            a {
+                font-size: 10px;
+                margin: 0 0px;
+            }
+        }
     }
-    .nav-links{
-        gap: 5px;
-     a {
-        font-size: 10px;
-        margin: 0 0px;
-    }
-    }
-}
 }

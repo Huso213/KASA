@@ -21,6 +21,10 @@
     display: flex;
     position: absolute;
     height: 68px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -31,36 +35,48 @@
   border-radius: 25px;
   width: 100%;
 }
-
+/*TABLETTE*/
 @media screen and (max-width: 800px) {
   .banner {
     border-radius: 18px;
-    height: 150px;
+    height: 120px;
     width: 95%;
     height: auto;
     margin: 20px 0 0 0;
 
+
     & .filtreBanner {
-      height: 150px;
+      height: 120px;
       border-radius: 18px;
       width: -webkit-fill-available;
     }
+
     & h1 {
-      width: 70%;
-      font-size: 35px;
+      width: 90%;
+      font-size: 24px;
       display: flex;
-      justify-content: flex-start;
-      left: 10%;
+      align-items: center;
+      justify-content: center;
+      left: 15px;
     }
   }
 }
-
+/*mOBILE */
 @media screen and (max-width: 600px) {
   .banner {
-    height: 90%;
+    height: 100%;
+
     & h1 {
-      font-size: 25px;
+      width: 90%;
+      font-size: 24px;
       font-weight: 500;
+      justify-content: flex-start;
+
+      br {
+        align-items: center;
+        display: inline-block;
+
+      }
     }
   }
 }

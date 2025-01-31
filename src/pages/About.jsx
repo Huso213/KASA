@@ -12,9 +12,9 @@ function About() {
       <div className="about">
         <Navbar />
         <Banner />
-          {/* Fibilite*/}
-          <Conteiner /> 
-          
+        {/* Fibilite*/}
+        <Conteiner />
+
         {/*Fin fiabilita*/}
 
         <Footer />
