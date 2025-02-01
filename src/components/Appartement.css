@@ -63,6 +63,18 @@
     width: 99%;
   }
   .appartement h1 {
-    width: 50%;
+    width: 80%;
+    font-size: clamp(18px, 3.5vw, 16px);
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 400px) {
+  .appartement h1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 340px) {
+  .appartement h1 {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=Appartement.css.map */

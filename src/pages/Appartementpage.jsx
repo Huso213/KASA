@@ -8,10 +8,16 @@ import useAppartement from "../Hook/useAppartement.jsx"; // Importation du hook
 import "../pages/Appartementpage.scss";
 import "../components/carousel/slick-carousel.scss";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
 
 function Appartementpage() {
   const apartment = useAppartement(); // Utilisation du hook
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // ce useEffect pour scroller en haut de la page au chargement
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll vers le haut
+  }, []); // Le tableau vide [] signifie que cela s'exécute une seule fois au montage du composant
 
   if (!apartment) {
     return <div>Chargement...</div>;

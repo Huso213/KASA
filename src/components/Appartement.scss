@@ -71,7 +71,11 @@
     top: -20px;
     width: 99%;
     & h1 {
-      width: 50%;
+      width: 80%;
+      font-size: clamp(18px, 3.5vw, 16px); // Ajustement mobile spécifique
+      line-height: 25px;
+      @media (max-width: 400px) { font-size: 16px; }
+       @media (max-width: 340px) { font-size: 14px; }
     }
   }
 }
