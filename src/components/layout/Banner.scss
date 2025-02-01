@@ -35,8 +35,9 @@
   border-radius: 25px;
   width: 100%;
 }
-/*TABLETTE*/
-@media screen and (max-width: 800px) {
+
+/*commencement version mobile*/
+@media screen and (max-width: 767px) {
   .banner {
     border-radius: 18px;
     height: 120px;
@@ -61,10 +62,20 @@
     }
   }
 }
-/*mOBILE */
+
+// Le titre se met en 2 lignes
+/*mOBILE 2 */
 @media screen and (max-width: 600px) {
   .banner {
-    height: 100%;
+    height: 115px;
+    border: sandybrown 2px solid;
+    border-radius: 10x;
+
+    & .filtreBanner {
+      height: 115px;
+      border-radius: 10x;
+
+    }
 
     & h1 {
       width: 90%;

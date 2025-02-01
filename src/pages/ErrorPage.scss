@@ -8,11 +8,12 @@
 
 
     & .navbar {
-       margin-top: 1em;
-       align-self: center;
+        margin-top: 1em;
+        align-self: center;
     }
 }
-.error{
+
+.error {
     & h1 {
         color: $red;
         font-size: 288px;
@@ -26,6 +27,7 @@
         margin-top: -10em;
         margin-bottom: 5em;
     }
+
     & a {
         font-size: 18px;
         color: $red;
@@ -37,28 +39,28 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-  .error-page{
-    & .navbar {
-margin-top: 2em;
-    }
+@media screen and (max-width: 767px) {
+    .error-page {
+        & .navbar {
+            margin-top: 2em;
+        }
 
-    & h1 {
-        color: $red;
-        font-size: 180px;
-        font-weight: bold;
-        margin-top: -10px;
-    }
+        & h1 {
+            color: $red;
+            font-size: 180px;
+            font-weight: bold;
+            margin-top: -10px;
+        }
 
-    & p {
-        color: $red;
-        font-size: 18px;
-        margin-top: 0;
-        margin-bottom: 5em;
-    }
+        & p {
+            color: $red;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 5em;
+        }
 
-    & a {
-        font-size: 14px;
+        & a {
+            font-size: 14px;
+        }
     }
-  }
 }

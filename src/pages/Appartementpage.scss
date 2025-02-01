@@ -1,5 +1,6 @@
 @import "../components/scss/variables.scss";
 
+
 .pageappart {
     //Bouton Accueil ligne doit etre visible
     .nav-links {
@@ -27,44 +28,12 @@
             border-radius: 25px;
         }
 
-        // Boutons de navigation
-        & .carousel-button {
-            background-color: inherit;
-            color: $blanc;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 65px;
-            padding: 10px;
-            position: absolute; // Les boutons doivent être positionnés relativement à `.imgappart`
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 10;
+        
 
-            &:hover {
-                background-color: inherit;
-            }
-        }
+       
 
-        & .carousel-button:first-of-type {
-            left: 10px; // Alignement à gauche
-        }
 
-        & .carousel-button:last-of-type {
-            right: 10px; // Alignement à droite
-        }
-
-        // Indicateur de position (compteur)
-        & .carousel-counter {
-            font-size: 18px;
-            font-weight: 500;
-            text-align: center;
-            color: $blanc;
-            position: absolute; // Position relative à `.imgappart`
-            bottom: 10px;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+       
     }
 
     .infoappart {
@@ -167,7 +136,7 @@
     }
 }
 /*PORTALE */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .pageappart {
         & .navbar {
             width: 95%;

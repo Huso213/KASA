@@ -6,7 +6,7 @@
   align-items: center;
   font-size: 1.5rem;
   /* Utilise les unités relatives */
-  color: var(--red);
+  color: #ff6060;
   font-weight: 500;
   height: 68px;
   margin-top: 2em;
@@ -37,16 +37,15 @@
 .nav-links a {
   text-decoration: none;
   /*cacher la ligne */
-  color: var(--red);
+  color: #ff6060;
   font-size: 24px;
   font-weight: 500;
   padding: 8px 12px;
   /* Espacement autour du texte */
   /*barre en dessous boutons*/
 }
-
 .nav-links a:hover {
-  border-bottom: var(--red) 3px solid;
+  border-bottom: #ff6060 3px solid;
 }
 
 /*indiquer la page actuel avec la barre */
@@ -58,23 +57,23 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .navbar {
     width: 95%;
-    margin: 1.5em 15px 0 15px;
+    border: solid green 1px;
+    margin: 25px 15px 0 15px;
   }
   .navbar .logo img {
+    height: 50px;
     margin-left: 0;
     width: 145px;
   }
 }
-
 @media screen and (max-width: 568px) {
   .nav-links a {
     font-size: 12px;
   }
 }
-
 @media screen and (max-width: 387px) {
   .navbar {
     width: 95%;
@@ -91,4 +90,4 @@
     font-size: 10px;
     margin: 0 0px;
   }
-}
+}/*# sourceMappingURL=Navbar.css.map */

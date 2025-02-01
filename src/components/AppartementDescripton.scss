@@ -1,4 +1,4 @@
-@import "./scss/variables.scss";
+@use "./scss/variables" as *; // Import global
 
 /* Conteneur général */
 
@@ -135,7 +135,7 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
 
 .box-appart{
   flex-direction: column;

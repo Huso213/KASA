@@ -12,14 +12,16 @@
   height: 223px;
   margin-top: 40px;
 }
-
 .banner h1 {
-  color: var(--blanc);
+  color: #ffffff;
   font-size: 48px;
   font-weight: 500;
   display: flex;
   position: absolute;
   height: 68px;
+}
+.banner h1 br {
+  display: none;
 }
 
 .filtreBanner {
@@ -30,34 +32,48 @@
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+/*commencement version mobile*/
+@media screen and (max-width: 767px) {
   .banner {
     border-radius: 18px;
-    height: 150px;
+    height: 120px;
     width: 95%;
     height: auto;
     margin: 20px 0 0 0;
   }
   .banner .filtreBanner {
-    height: 150px;
+    height: 120px;
     border-radius: 18px;
     width: -webkit-fill-available;
   }
   .banner h1 {
-    width: 70%;
-    font-size: 35px;
+    width: 90%;
+    font-size: 24px;
     display: flex;
-    justify-content: flex-start;
-    left: 10%;
+    align-items: center;
+    justify-content: center;
+    left: 15px;
   }
 }
-
+/*mOBILE 2 */
 @media screen and (max-width: 600px) {
   .banner {
-    height: 90%;
+    height: 115px;
+    border: sandybrown 2px solid;
+    border-radius: 10x;
+  }
+  .banner .filtreBanner {
+    height: 115px;
+    border-radius: 10x;
   }
   .banner h1 {
-    font-size: 25px;
+    width: 90%;
+    font-size: 24px;
     font-weight: 500;
+    justify-content: flex-start;
   }
-}
+  .banner h1 br {
+    align-items: center;
+    display: inline-block;
+  }
+}/*# sourceMappingURL=Banner.css.map */

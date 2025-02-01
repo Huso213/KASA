@@ -6,7 +6,7 @@ import Footer from "../components/layout/Footer.jsx";
 import AppartementDescription from "../components/AppartementDescription";
 import useAppartement from "../Hook/useAppartement.jsx"; // Importation du hook
 import "../pages/Appartementpage.scss";
-import "slick-carousel/slick/slick.css";
+import "../components/carousel/slick-carousel.scss";
 import "slick-carousel/slick/slick-theme.css";
 
 function Appartementpage() {

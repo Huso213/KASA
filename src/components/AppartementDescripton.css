@@ -11,14 +11,13 @@
   gap: 3em;
   /* Section Conteiner */
 }
-
 .box-appart .Conteiner-container {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
   width: 48%;
-  height: fit-content;
-  /* Hauteur standardisée */
+  height: -moz-fit-content;
+  height: fit-content; /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -26,8 +25,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--red);
-  color: var(--blanc);
+  background-color: #ff6060;
+  color: #ffffff;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
@@ -50,21 +49,18 @@
 
 .Conteiner-content.open {
   display: block;
-  background-color: var(--gris);
+  background-color: #F6F6F6;
   height: 250px;
 }
-
 .Conteiner-content.open p {
   font-size: 18px;
   font-weight: 400;
   background-color: inherit;
-  color: var(--red);
+  color: #ff6060;
 }
-
 .Conteiner-content.open ul {
   margin: 15px 0 0 -30px;
 }
-
 .Conteiner-content.open li {
   font-size: 18px;
   font-weight: 400;
@@ -73,7 +69,7 @@
   font-size: 18px;
   font-weight: 400;
   background-color: inherit;
-  color: var(--red);
+  color: #ff6060;
   display: flex;
   margin-bottom: 10px;
 }
@@ -83,8 +79,8 @@
   border-radius: 10px;
   overflow: hidden;
   width: 49%;
-  height: fit-content;
-  /* Hauteur standardisée */
+  height: -moz-fit-content;
+  height: fit-content; /* Hauteur standardisée */
   max-height: 300px;
 }
 
@@ -92,8 +88,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--red);
-  color: var(--blanc);
+  background-color: #ff6060;
+  color: #ffffff;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 10px;
@@ -117,9 +113,9 @@
 
 .equipment-content.open {
   display: block;
-  background-color: var(--gris);
+  background-color: #F6F6F6;
   height: 300px;
-  color: var(--red);
+  color: #ff6060;
 }
 
 /* Liste des équipements */
@@ -144,7 +140,7 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .box-appart {
     flex-direction: column;
     gap: 10px;
@@ -154,4 +150,4 @@
   .box-appart .Conteiner-container {
     width: 99.8%;
   }
-}
+}/*# sourceMappingURL=AppartementDescripton.css.map */

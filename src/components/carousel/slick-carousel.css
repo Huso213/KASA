@@ -13,27 +13,25 @@
 
 .carousel-button {
   background-color: inherit;
-  color: var(--blanc);
+  color: #ffffff;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 64px;
   padding: 10px;
   position: absolute;
+  top: 50%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   font-size: 65px;
 }
-
 .carousel-button:hover {
   background-color: inherit;
 }
-
 .carousel-button:first-of-type {
   left: 10px;
 }
-
 .carousel-button:last-of-type {
   right: 10px;
 }
@@ -42,8 +40,11 @@
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  color: var(--blanc);
+  color: #ffffff;
   display: flex;
   position: absolute;
   top: 80%;
-}
+  bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}/*# sourceMappingURL=slick-carousel.css.map */

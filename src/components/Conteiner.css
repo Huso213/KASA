@@ -14,7 +14,7 @@
 
 .Conteiner-titre {
   width: 100%;
-  background-color: var(--red);
+  background-color: #ff6060;
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -37,7 +37,13 @@
 .Conteiner-about.open {
   height: auto;
   border-radius: 5px;
-  background-color: var(--gris);
+  background-color: #F6F6F6;
   font-size: 18px;
-  color: var(--red);
+  color: #ff6060;
+}
+
+@media screen and (max-width: 767px) {
+  .box-about {
+    margin-bottom: 3em;
+  }
 }/*# sourceMappingURL=Conteiner.css.map */

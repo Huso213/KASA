@@ -1,4 +1,4 @@
-@import "./scss/variables.scss";
+@use "./scss/variables" as *; // Import global
 
 .box-about {
   width: 95%;
@@ -42,7 +42,7 @@
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .box-about {
       margin-bottom: 3em;
   }

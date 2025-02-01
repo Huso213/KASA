@@ -4,48 +4,44 @@
   display: flex;
   flex-direction: column;
 }
-
 .error-page .navbar {
   margin-top: 1em;
   align-self: center;
 }
 
 .error h1 {
-  color: var(--red);
+  color: #ff6060;
   font-size: 288px;
   font-weight: bold;
   margin-top: -10px;
 }
-
 .error p {
-  color: var(--red);
+  color: #ff6060;
   font-size: 20px;
   margin-top: -10em;
   margin-bottom: 5em;
 }
-
 .error a {
   font-size: 18px;
-  color: var(--red);
+  color: #ff6060;
   text-decoration: none;
 }
-
 .error a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .error-page .navbar {
     margin-top: 2em;
   }
   .error-page h1 {
-    color: var(--red);
+    color: #ff6060;
     font-size: 180px;
     font-weight: bold;
     margin-top: -10px;
   }
   .error-page p {
-    color: var(--red);
+    color: #ff6060;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 5em;
@@ -53,4 +49,4 @@
   .error-page a {
     font-size: 14px;
   }
-}
+}/*# sourceMappingURL=ErrorPage.css.map */

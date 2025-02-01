@@ -1,5 +1,4 @@
-@import "./scss/variables.scss";
-
+@use "./scss/variables" as *; // Import global
 
 .appartement {
   border: solid red 1px;
@@ -16,10 +15,11 @@
   background-color: $red;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   justify-content: center;
+  transition: transform 0.3s ease; // Pour une animation plus fluide
 
   &:hover {
-    animation: scale-up-center 2s linear 0s 1 normal none;
-  }
+    transform: scale(1.02); // Animation plus simple et performante
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);  }
 
 
   & h1 {
@@ -61,8 +61,8 @@
 
 /*pour media queries*/
 
-
-@media screen and (max-width: 800px) {
+/*mobile*/
+@media screen and (max-width: 767px) {
   .appartement {
     height: 257px;
     width: 336px;

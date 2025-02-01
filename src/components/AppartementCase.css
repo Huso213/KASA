@@ -1,34 +1,35 @@
 @charset "UTF-8";
 .AppartementCase {
-  background-color: var(--gris);
+  background-color: #F6F6F6;
   flex-wrap: wrap;
   /* Permet le passage à une nouvelle ligne */
-  gap: 5px;
-  /* Espacement entre les éléments */
   justify-content: center;
   /* Centre les éléments horizontalement */
-  width: 95%;
+  width: 90%;
   /* Prend toute la largeur de la page */
   border-radius: 25px;
   margin-top: 3em;
   display: grid;
   justify-self: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-template-rows: repeat(3, 1fr);
-  column-gap: 30px;
-  grid-row-gap: 30px;
-  padding: 3em 30px 7em 30px;
-}
-
-.AppartementCase .a {
-  width: max-content;
-  height: max-content;
+  row-gap: 38px;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+  padding: 3em 2% 7em 2%;
 }
 
 /*-*-*-*-*-*-MOBILE*-*-*-*-*-*-*-*-*-*/
-/*TABLETTE */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .AppartementCase {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    width: 95%;
+    height: 100%;
+    justify-self: center;
+    margin: 0 0 -8.5em 0;
     background-color: inherit;
   }
-}
+}/*# sourceMappingURL=AppartementCase.css.map */

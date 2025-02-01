@@ -13,33 +13,36 @@
   border-radius: 10px;
 }
 
+//boutons de navigation
 .carousel-button {
   background-color: inherit;
   color: $blanc;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 64px;
   padding: 10px;
-  position: absolute;
+  position: absolute; // Les boutons doivent être positionnés relativement à `.imgappart`
+  top: 50%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   font-size: 65px;
+
+  &:hover {
+    background-color: inherit;
+  }
+
+  &:first-of-type {
+    left: 10px; // Alignement à gauche
+  }
+
+  &:last-of-type {
+    right: 10px;
+  }
 }
 
-.carousel-button:hover {
-  background-color: inherit;
-}
-
-.carousel-button:first-of-type {
-  left: 10px;
-}
-
-.carousel-button:last-of-type {
-  right: 10px;
-}
-
+// Indicateur de position (compteur)
 .carousel-counter {
   font-size: 18px;
   font-weight: 500;
@@ -48,4 +51,7 @@
   display: flex;
   position: absolute;
   top: 80%;
+  bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

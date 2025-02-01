@@ -4,7 +4,7 @@
     padding: 20px;
     min-height: 200px;
     width: 100%;
-    margin-top: 5em;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +22,11 @@
     width: 125px;
     height: 40px;
 }
-@media screen and (max-width: 800px) {
+
+// Mobile
+@media screen and (max-width: 767px) {
     .footer {
-        margin-top: -95px;
+       // margin-top: -95px;
 & h3{
     font-size: 12px;
 }
