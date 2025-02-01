@@ -61,6 +61,7 @@ function Appartementpage() {
             <h1>{apartment.title}</h1>
             <h2>{apartment.location}</h2>
           </div>
+          {/*text sous localisation */}
           <div className="textapparttitresous">
             {apartment.tags?.map((tag, index) => (
               <p key={index} className="tag">
