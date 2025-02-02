@@ -34,15 +34,14 @@
     justify-content: space-between;
     margin: 2em 10px 0 45px;
     width: 95%;
-    border: solid red 1px;
 
     /*Titre - Location - tag */
     & .bloc-1 {
+      flex: 0 0 70%; /* Bloc 1 prend 70% de l'espace */
+      max-width: 70%; /* Largeur maximale de 70% */
       color: $red;
-      border: solid black;
       //Font titre et localisation appartement
       & h1 {
-        border: solid yellow 2px;
         font-size: 36px;
         font-weight: 500;
         line-height: 51px;
@@ -50,17 +49,15 @@
         
       }
       & h2 {
-        border: solid purple 2px;
         font-size: 18px;
         font-weight: 500;
         margin: 0;
         line-height:26px;
       }
       & .textapparttitresous {
-        width: 450px;
+        width: 80%;
         display: flex;
-        justify-content: space-between;
-        gap: 1em;
+        gap: 20px;
         flex-direction: row;
       }
 
@@ -70,19 +67,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: auto;
-        padding: 1em;
+        width: 115px;
         border-radius: 10px;
         height: 25px;
         font-size: 14px;
+        line-height: 20px;
       }
     }
 
     /*Badge utilisateur et etoile */
     .bloc-2 {
+      flex: 0 0 30%; /* Bloc 2 prend 30% de l'espace */
+  max-width: 30%; /* Largeur maximale de 30% */
       margin: 0 10px 0 0;
       width: auto;
-      border: solid 1px green;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       .badge {
         display: flex;
 
@@ -91,8 +92,12 @@
           font-weight: 500;
           display: flex;
           align-self: center;
+          justify-items: flex-end;
           color: $red;
+          text-align: end;
           width: 50%;
+          padding: 0;
+          margin: 0 10px 0 0;
         }
 
         & .badgeutilisat {
@@ -116,7 +121,7 @@
         width: 15%;
         padding: 0 1em;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-content: center;
         align-items: center;
         margin: 25px 0 0 0;
