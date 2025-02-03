@@ -151,8 +151,9 @@
 /*Correction d'affichage */
 @media screen and (max-width: 990px) {
 .box-appart{
-//  border: solid 1px red;
+ border: solid 1px red;
   flex-direction: column;
+  margin-bottom: -40px;
 
   & .Conteiner-container{
   width: 100%;
