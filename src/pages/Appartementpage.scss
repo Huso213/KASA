@@ -55,7 +55,7 @@
         line-height:26px;
       }
       & .textapparttitresous {
-        width: 80%;
+        width: 95%;
         display: flex;
         gap: 20px;
         flex-direction: row;
@@ -67,7 +67,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 115px;
+        width: auto;
+        padding: 0 15px;
         border-radius: 10px;
         height: 25px;
         font-size: 14px;
