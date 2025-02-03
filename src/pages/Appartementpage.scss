@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2em 10px 0 45px;
+    margin: 2em 10px 0 25px;
     width: 95%;
 
     /*Titre - Location - tag */
@@ -165,28 +165,28 @@
       }
       // Boutons de navigation
       & .carousel-button {
-        font-size: 35px;
+        font-size: 30px;
       }
     }
 
     .infoappart {
       display: flex;
       flex-direction: column;
-      width: 93%;
+      width: 95%;
       margin: 0;
+      padding: 0;
       justify-self: center;
       & .bloc-1 {
-        //       border: solid 1px hotpink;
         margin: 0;
+        max-width: 100%;
+        padding: 0;
 
         & .nomappart {
-          // border: solid 5px purple;
           & h1 {
             font-size: 18px;
             width: 100%;
             max-width: 335px;
             font-weight: 500;
-            // border: solid 2px gold;
           }
           & h2 {
             font-size: 14px;
@@ -194,7 +194,6 @@
           }
         }
         & .textapparttitresous {
-          //border: solid 1px black;
           width: auto;
           margin-right: 10px;
           justify-content: flex-start;
@@ -208,19 +207,19 @@
       & .bloc-2 {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(2, 1fr);
-        width: auto;
-        height: 100%;
+        grid-template-columns: repeat(2, 1fr);;
+        max-width: 100%;
         margin: 0 0 0 0;
-        // border: solid 2px green;
+        align-items: center;
 
         & .etoile {
           grid-area: 1/1/2/2;
           width: 70%;
           margin: 0;
           padding: 0;
-          //border: solid;
-          gap: 0px;
+          display: flex;
+          justify-content: flex-start;
+          gap: 5px;
 
           & span {
             display: inline-block;
@@ -246,9 +245,9 @@
           position: relative;
           align-content: end;
           justify-content: end;
-          //border: solid 5px lawngreen;
           & h3 {
             display: flex;
+            justify-content: flex-end;
           }
           & .badgeutilisat {
             width: auto;
@@ -256,7 +255,6 @@
             img.host-picture {
               margin: 0;
               position: static;
-              // border: solid;
               width: 50px;
               height: 50px;
             }
@@ -277,5 +275,44 @@
         font-size: 14px;
       }
     }
+ // Boutons de navigation et compteur
+ & .imgappart{
+   .carousel-counter{
+    font-size: 14px;
+  }
+  .carousel-button {
+
+  font-size: 25px;
+}}
+
+     .infoappart{ 
+      & .bloc-1 .textapparttitresous{
+      gap:5px;
+    & p.tag{
+      font-size: 10px;
+      width: auto;
+      padding: 0 6px
+    }
+  }
+/*Bloc 2 pour etoiles et badge*/
+& .bloc-2{
+& .etoile {
+  gap: 8px;
+span i.fas.fa-star, span.filled i.fas.fa-star{
+//font-size: 15px;
+width: 18px;
+height: 18px;
+}}
+ & .badge h3{
+  //color: black;
+  font-size: 12px;
+  justify-content: flex-end;
+  width: 30%;
+  margin: 0 3px 0 0;
+ }
+
+}
+  }
+
   }
 }

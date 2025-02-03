@@ -1,7 +1,6 @@
 @use "./scss/variables" as *; // Import global
 
 .appartement {
-  border: solid red 1px;
   border-radius: 10px;
   max-width: none;
   width: calc(100% - 20px);
