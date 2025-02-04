@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import data from "../data/info.json"; // Ajustez le chemin si nécessaire
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import data from "../data/info.json";
 import "../collapse/AppartementDescripton.scss";
 
 const ApartmentDescription = () => {
@@ -25,9 +25,13 @@ const ApartmentDescription = () => {
       <div className="Conteiner-container">
         <div className="Conteiner-header" onClick={toggleDescription}>
           <span>Description</span>
-          <i className={`fas ${isDescriptionOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
+          <i
+            className={`fas ${
+              isDescriptionOpen ? "fa-chevron-up rotate" : "fa-chevron-down"
+            }`}
+          ></i>
         </div>
-        <div className={`Conteiner-content ${isDescriptionOpen ? 'open' : ''}`}>
+        <div className={`Conteiner-content ${isDescriptionOpen ? "open" : ""}`}>
           <p>{apartment.description || "Description non disponible."}</p>
         </div>
       </div>
@@ -36,9 +40,13 @@ const ApartmentDescription = () => {
       <div className="Conteiner-container">
         <div className="Conteiner-header" onClick={toggleEquipment}>
           <span>Équipements</span>
-          <i className={`fas ${isEquipmentOpen ? "fa-chevron-up rotate" : "fa-chevron-down"}`}></i>
+          <i
+            className={`fas ${
+              isEquipmentOpen ? "fa-chevron-up rotate" : "fa-chevron-down"
+            }`}
+          ></i>
         </div>
-        <div className={`Conteiner-content ${isEquipmentOpen ? 'open' : ''}`}>
+        <div className={`Conteiner-content ${isEquipmentOpen ? "open" : ""}`}>
           <ul>
             {apartment.equipments?.map((equip, index) => (
               <li key={index}>{equip}</li>
