@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./AppartementCase.scss";
 import Appartement from "./Appartement.jsx";
 import data from "../data/info.json";

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar.jsx";
 import Footer from "../components/layout/Footer.jsx";
-import AppartementDescription from "../components/AppartementDescription";
+import AppartementDescription from "../collapse/AppartementDescription.jsx";
 import useAppartement from "../Hook/useAppartement.jsx"; // Importation du hook
 import "../pages/Appartementpage.scss";
 import "../components/carousel/slick-carousel.scss";

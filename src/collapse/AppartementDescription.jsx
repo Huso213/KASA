@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from "../data/info.json"; // Ajustez le chemin si nécessaire
-import "../components/AppartementDescripton.scss";
+import "../collapse/AppartementDescripton.scss";
 
 const ApartmentDescription = () => {
   const { id } = useParams(); // Récupère l'ID depuis l'URL
