@@ -60,9 +60,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .navbar {
+  nav.navbar {
     width: 95%;
-    margin: 25px 15px 0 15px;
+    margin: 28px 15px 0 15px;
 
     .logo img {
       height: 50px;
@@ -73,7 +73,7 @@
 }
 
 //Adapter a l'ecran
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 569px) {
   .nav-links {
     //border: solid 1px;
   }
@@ -82,7 +82,7 @@
     font-size: 12px;
   }
 }
-
+/*Adaptation mobile */
 @media screen and (max-width: 387px) {
   .navbar {
     width: 95%;
