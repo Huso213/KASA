@@ -23,7 +23,7 @@
   padding: 0 20px;
   & span {
     color: white;
-    font-size: 23px;
+    font-size: 24px;
   }
   & i{
     color: white;
@@ -45,5 +45,26 @@
 @media screen and (max-width: 767px) {
   .box-about {
       margin-bottom: 3em;
-  }
+      .Conteiner-titre span{
+        font-size: 18px;
+      }
+      .Conteiner-about.open{
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+}
+
+
+/*Adaptation mobile */
+@media screen and (max-width: 569px) {
+  .box-about {
+      .Conteiner-titre span{
+        font-size: 13px;
+      }
+      .Conteiner-about.open{
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
 }
